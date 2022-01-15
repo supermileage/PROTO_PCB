@@ -1,0 +1,188 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Device_Battery_Cell
+#
+DEF Device_Battery_Cell BT 0 0 N N 1 F N
+F0 "BT" 100 100 50 H V L CNN
+F1 "Device_Battery_Cell" 100 0 50 H V L CNN
+F2 "" 0 60 50 V I C CNN
+F3 "" 0 60 50 V I C CNN
+DRAW
+S -90 70 90 60 0 1 0 F
+S -62 47 58 27 0 1 0 F
+P 2 0 1 0 0 30 0 0 N
+P 2 0 1 0 0 70 0 100 N
+P 2 0 1 10 20 135 60 135 N
+P 2 0 1 10 40 155 40 115 N
+X + 1 0 200 100 D 50 50 1 1 P
+X - 2 0 -100 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Fuse
+#
+DEF Device_Fuse F 0 0 N Y 1 F N
+F0 "F" 80 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *Fuse*
+$ENDFPLIST
+DRAW
+S -30 -100 30 100 0 1 10 N
+P 2 0 1 0 0 100 0 -100 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Q_NMOS_DGS
+#
+DEF Device_Q_NMOS_DGS Q 0 0 Y N 1 F N
+F0 "Q" 200 50 50 H V L CNN
+F1 "Device_Q_NMOS_DGS" 200 -50 50 H V L CNN
+F2 "" 200 100 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 65 0 110 0 1 10 N
+C 100 -70 10 0 1 0 F
+C 100 70 10 0 1 0 F
+P 2 0 1 0 10 0 -100 0 N
+P 2 0 1 10 10 75 10 -75 N
+P 2 0 1 10 30 -50 30 -90 N
+P 2 0 1 10 30 20 30 -20 N
+P 2 0 1 10 30 90 30 50 N
+P 2 0 1 0 100 100 100 70 N
+P 3 0 1 0 100 -100 100 0 30 0 N
+P 4 0 1 0 30 -70 130 -70 130 70 30 70 N
+P 4 0 1 0 40 0 80 15 80 -15 40 0 F
+P 4 0 1 0 110 20 115 15 145 15 150 10 N
+P 4 0 1 0 130 15 115 -10 145 -10 130 15 N
+X D 1 100 200 100 D 50 50 1 1 P
+X G 2 -200 0 100 R 50 50 1 1 I
+X S 3 100 -200 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R
+#
+DEF Device_R R 0 0 N Y 1 F N
+F0 "R" 80 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
+F2 "" -70 0 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -40 -100 40 100 0 1 10 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# PROTO_PCB_2022-rescue_B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue
+#
+DEF PROTO_PCB_2022-rescue_B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J 0 40 Y Y 1 F N
+F0 "J" -100 50 50 H V R CNN
+F1 "PROTO_PCB_2022-rescue_B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" 50 -150 50 H V C CNN
+F2 "digikey-footprints:PinHeader_1x2_P2mm_Drill1mm" 200 200 60 H I L CNN
+F3 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" 200 300 60 H I L CNN
+F4 "455-1704-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "B2B-PH-K-S(LF)(SN)" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Rectangular Connectors - Headers, Male Pins" 200 700 60 H I L CNN "Family"
+F8 "http://www.jst-mfg.com/product/pdf/eng/ePH.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/jst-sales-america-inc/B2B-PH-K-S(LF)(SN)/455-1704-ND/926611" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "CONN HEADER VERT 2POS 2MM" 200 1000 60 H I L CNN "Description"
+F11 "JST Sales America Inc." 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S -50 0 150 -100 1 1 0 f
+S -10 -45 10 -65 1 1 0 F
+S 90 -45 110 -65 1 1 0 F
+X ~ 1 0 100 100 D 50 50 1 1 P
+X ~ 2 100 100 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Relay_RT314A12
+#
+DEF Relay_RT314A12 K 0 20 Y Y 1 F N
+F0 "K" 450 150 50 H V L CNN
+F1 "Relay_RT314A12" 450 50 50 H V L CNN
+F2 "Relay_THT:Relay_SPDT_Schrack-RT1-16A-FormC_RM5mm" 1550 -50 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS RT314A05 RT314A06 RT314A12 RT314A24
+$FPLIST
+ Relay*SPDT*Schrack*RT1*16A*FormC*RM5mm*
+$ENDFPLIST
+DRAW
+S -400 200 400 -200 0 1 10 f
+S -325 75 -75 -75 0 1 10 N
+P 2 0 0 10 -100 75 -300 -75 N
+P 2 0 1 0 -200 -200 -200 -75 N
+P 2 0 1 0 -200 200 -200 75 N
+P 2 0 1 10 -75 0 -50 0 N
+P 2 0 1 10 -25 0 0 0 N
+P 2 0 1 10 25 0 50 0 N
+P 2 0 1 10 75 0 100 0 N
+P 2 0 1 10 125 0 150 0 N
+P 2 0 1 20 200 -100 125 150 N
+P 2 0 1 0 200 -100 200 -200 N
+P 4 0 1 0 100 200 100 100 125 125 100 150 F
+P 4 0 1 0 300 200 300 100 275 125 300 150 N
+X ~ 11 200 -300 100 U 50 50 1 1 P
+X ~ 12 100 300 100 D 50 50 1 1 P
+X ~ 14 300 300 100 D 50 50 1 1 P
+X ~ A1 -200 300 100 D 50 50 1 1 P
+X ~ A2 -200 -300 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_PWR_FLAG
+#
+DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
+F0 "#FLG" 0 75 50 H I C CNN
+F1 "power_PWR_FLAG" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
+X pwr 1 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library
