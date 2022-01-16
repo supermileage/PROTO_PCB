@@ -127,7 +127,7 @@ F 3 "~" H 2700 8000 50  0001 C CNN
 $EndComp
 Connection ~ 2700 8000
 Text Notes 5800 1150 0    50   ~ 0
-To Do:\n1. Add 5V step down chip\n2. Oxygen Sensor\n3. Check that the current of MOSFET is enough for horn and brake lights (get datasheet for horn and brake lights)\n4. ECU has to kill electronics too (check and implement this)\n5. Brakelight Enable - not from a button, but from the reed switch (consider an alternative method) - Sarah to find a reed switch
+To Do:\n1. Add Mini ATtiny85 board\n2. Add Oxygen Sensor\n4. ECU has to kill electronics too (check and implement this)\n5. Brakelight Enable - not from a button, but from the reed switch (consider an alternative method) - Sarah to find a reed switch\n\n(NEW) 6. Add an extra connection terminal for the 12V battery in case
 $Comp
 L Switch:SW_Push SW?
 U 1 1 61E45701
@@ -392,10 +392,8 @@ F 5 "" H 2450 3250 60  0001 L CNN "MPN"
 	1    2250 2750
 	0    -1   -1   0   
 $EndComp
-Text Notes 7400 6200 0    50   ~ 0
+Text Notes 6250 5950 0    50   ~ 0
 SHOULD WE SEPARATE SIGNAL_12V FROM POWER_12V?
-Text Notes 7400 6050 0    50   ~ 0
-Starter Motor Enable 12V should come \nfrom small battery (to power coil) - Talisha to ask Luke
 $Comp
 L power:GND #PWR?
 U 1 1 61EE8800
