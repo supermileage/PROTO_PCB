@@ -56,19 +56,6 @@ ECU_KILL_EN_TOGGLESWITCH_2
 Text GLabel 7300 4450 0    50   Input ~ 0
 STARTER_EN_PUSHBUTTON
 $Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue ECU_KILL_EN
-U 1 1 618FB70C
-P 3450 3450
-F 0 "ECU_KILL_EN" V 3541 3322 50  0000 R CNN
-F 1 "Conn_?" V 3450 3322 50  0001 R CNN
-F 2 "" H 3650 3650 60  0001 L CNN
-F 3 "" H 3650 3750 60  0001 L CNN
-F 4 "" H 3650 3850 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 3650 3950 60  0001 L CNN "MPN"
-	1    3450 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 619A0EBB
 P 2700 7700
@@ -359,10 +346,10 @@ U 1 1 61ECD161
 P 2250 2150
 F 0 "HORN_EN" V 2341 2022 50  0000 R CNN
 F 1 "Conn_?" V 2250 2022 50  0001 R CNN
-F 2 "" H 2450 2350 60  0001 L CNN
-F 3 "" H 2450 2450 60  0001 L CNN
-F 4 "" H 2450 2550 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 2450 2650 60  0001 L CNN "MPN"
+F 2 "Connector_Molex:Molex_CLIK-Mate_502443-0270_1x02-1MP_P2.00mm_Vertical" H 2450 2350 60  0001 L CNN
+F 3 "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987650-3302.PDF" H 2450 2450 60  0001 L CNN
+F 4 "WM10606CT-ND" H 2450 2550 60  0001 L CNN "DigiKeyPN"
+F 5 "5033950410" H 2450 2650 60  0001 L CNN "MPN"
 	1    2250 2150
 	0    -1   -1   0   
 $EndComp
@@ -430,12 +417,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61EE9E38
-P 3350 3450
-F 0 "#PWR?" H 3350 3200 50  0001 C CNN
-F 1 "GND" H 3355 3277 50  0000 C CNN
-F 2 "" H 3350 3450 50  0001 C CNN
-F 3 "" H 3350 3450 50  0001 C CNN
-	1    3350 3450
+P 3350 3550
+F 0 "#PWR?" H 3350 3300 50  0001 C CNN
+F 1 "GND" H 3355 3377 50  0000 C CNN
+F 2 "" H 3350 3550 50  0001 C CNN
+F 3 "" H 3350 3550 50  0001 C CNN
+	1    3350 3550
 	1    0    0    -1  
 $EndComp
 Text GLabel 2000 2650 0    50   Input ~ 0
@@ -445,7 +432,7 @@ BRAKELIGHTS_EN_12V_SIGNAL
 Text GLabel 2000 2050 0    50   Input ~ 0
 HORN_EN_12V_SIGNAL
 Wire Wire Line
-	3200 3350 3350 3350
+	3350 3550 3500 3550
 Wire Wire Line
 	2000 2050 2150 2050
 Wire Wire Line
@@ -539,7 +526,7 @@ F 3 "" H 7750 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7750 4300 7750 4250
-Text Notes 1750 1500 0    50   ~ 0
+Text Notes 1800 1550 0    50   ~ 0
 - MOLEX for button connection to PCB (Ivy to find part numbers)\n- Barrel Jack (or any alternative from Ivy) \n   for Battery to PCB (only small 12V)
 $Comp
 L power:GND #PWR?
@@ -554,19 +541,6 @@ F 3 "" H 4000 1900 50  0001 C CNN
 $EndComp
 Text GLabel 4000 1800 0    50   Input ~ 0
 SMALL_12V
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue SMALL_12V_BATTERY_CONN?
-U 1 1 61ECC655
-P 4100 1900
-F 0 "SMALL_12V_BATTERY_CONN?" V 4191 1772 50  0000 R CNN
-F 1 "Conn_?" V 4100 1772 50  0001 R CNN
-F 2 "" H 4300 2100 60  0001 L CNN
-F 3 "" H 4300 2200 60  0001 L CNN
-F 4 "" H 4300 2300 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 4300 2400 60  0001 L CNN "MPN"
-	1    4100 1900
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61EE2CFA
@@ -587,7 +561,7 @@ L Device:Battery_Cell BT?
 U 1 1 61EB6EF2
 P 4200 2550
 F 0 "BT?" V 4455 2600 50  0000 C CNN
-F 1 "BIG_12V_BATTERY" V 4364 2600 50  0000 C CNN
+F 1 "SMALL_12V_BATTERY" V 4364 2600 50  0000 C CNN
 F 2 "" V 4200 2610 50  0001 C CNN
 F 3 "~" V 4200 2610 50  0001 C CNN
 	1    4200 2550
@@ -608,18 +582,18 @@ Wire Wire Line
 	7100 2800 7250 2800
 Wire Wire Line
 	7250 2800 7250 2600
-Text GLabel 2850 3450 0    50   Input ~ 0
+Text GLabel 3350 3350 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_2
-Text GLabel 2850 3650 0    50   Input ~ 0
+Text GLabel 3350 3450 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_3
-Text GLabel 2850 3250 0    50   Input ~ 0
+Text GLabel 3350 3250 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_1
 Wire Wire Line
-	2850 3250 3000 3250
+	3350 3250 3500 3250
 Wire Wire Line
-	2850 3450 3000 3450
+	3350 3350 3500 3350
 Wire Wire Line
-	2850 3650 3000 3650
+	3350 3450 3500 3450
 $Comp
 L Switch:SW_Push SW?
 U 1 1 61F362BE
@@ -670,4 +644,28 @@ Text Notes 5750 1700 0    98   ~ 0
 STARTER AND ECU\n
 Text Notes 800  1050 0    98   ~ 0
 POWER AND CONNECTIONS\n
+$Comp
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue SMALL_12V_BATTERY_CONN?
+U 1 1 61ECC655
+P 4100 1900
+F 0 "SMALL_12V_BATTERY_CONN?" V 4191 1772 50  0000 R CNN
+F 1 "Conn_?" V 4100 1772 50  0001 R CNN
+F 2 "" H 4300 2100 60  0001 L CNN
+F 3 "" H 4300 2200 60  0001 L CNN
+F 4 "" H 4300 2300 60  0001 L CNN "DigiKeyPN"
+F 5 "" H 4300 2400 60  0001 L CNN "MPN"
+	1    4100 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 61E4C7B0
+P 3700 3350
+F 0 "J?" H 3780 3342 50  0000 L CNN
+F 1 "ECU_EN_CONNECTION" H 3780 3251 50  0000 L CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0470_1x04-1MP_P1.50mm_Vertical" H 3700 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3700 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
