@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Proto-PCB's-combined-rescue)(type Legacy)(uri "${KIPRJMOD}/Proto PCB's combined-rescue.lib")(options "")(descr ""))
+  (lib (name PROTO_PCB_2022-rescue)(type Legacy)(uri ${KIPRJMOD}/PROTO_PCB_2022-rescue.lib)(options "")(descr ""))
+)
