@@ -159,10 +159,6 @@ Text GLabel 2750 5350 2    50   Input ~ 0
 HORN_PWR
 Text GLabel 2750 4750 2    50   Input ~ 0
 SMALL_12V
-Wire Notes Line
-	4250 4150 4250 8250
-Wire Notes Line
-	800  8250 800  4150
 Text Notes 6000 2300 0    50   ~ 0
 When Coil is Powered: ECU is not powered - Relay is disconnected\nWhen Coil is Not Powered: ECU is powered - Relay is connected\n> NORMALLY ON RELAY, 5A ON CONTACTS\n\n\n
 Wire Wire Line
@@ -747,4 +743,12 @@ F 5 "" H 4000 3200 60  0001 L CNN "MPN"
 	1    3800 2700
 	0    -1   -1   0   
 $EndComp
+Wire Notes Line
+	800  4150 4050 4150
+Wire Notes Line
+	4050 4150 4050 7650
+Wire Notes Line
+	4050 7650 800  7650
+Wire Notes Line
+	800  7650 800  4150
 $EndSCHEMATC

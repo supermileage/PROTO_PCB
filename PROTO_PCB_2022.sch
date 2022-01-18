@@ -56,18 +56,6 @@ ECU_KILL_EN_TOGGLESWITCH_2
 Text GLabel 7300 4450 0    50   Input ~ 0
 STARTER_EN_PUSHBUTTON
 $Comp
-L Device:R R2
-U 1 1 619A0EBB
-P 2250 7000
-F 0 "R2" H 2320 7046 50  0000 L CNN
-F 1 "10k" H 2320 6955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2180 7000 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 2250 7000 50  0001 C CNN
-F 4 "RC1005F103CS" H 2250 7000 50  0001 C CNN "MPN"
-	1    2250 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 61A29F4D
 P 2250 7300
@@ -84,9 +72,10 @@ U 1 1 61AB1752
 P 2250 5300
 F 0 "R1" H 2320 5346 50  0000 L CNN
 F 1 "10k" H 2320 5255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2180 5300 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 2250 5300 50  0001 C CNN
-F 4 "RC1005F103CS" H 2250 5300 50  0001 C CNN "MPN"
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2180 5300 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2250 5300 50  0001 C CNN
+F 4 "RC0805FR-0710RL" H 2250 5300 50  0001 C CNN "MPN"
+F 5 "311-10.0CRCT-ND" H 2250 5300 50  0001 C CNN "DigikeyPN"
 	1    2250 5300
 	1    0    0    -1  
 $EndComp
@@ -144,17 +133,6 @@ Text GLabel 1300 6200 0    50   Input ~ 0
 SMALL_12V
 Wire Wire Line
 	2450 5050 2250 5050
-$Comp
-L Device:R #R3
-U 1 1 61E64182
-P 3350 5550
-F 0 "#R3" V 3143 5550 50  0000 C CNN
-F 1 "HORN" V 3234 5550 50  0000 C CNN
-F 2 "" V 3280 5550 50  0001 C CNN
-F 3 "~" H 3350 5550 50  0001 C CNN
-	1    3350 5550
-	0    1    1    0   
-$EndComp
 Text GLabel 2750 5350 2    50   Input ~ 0
 HORN_PWR
 Text GLabel 2750 4750 2    50   Input ~ 0
@@ -333,37 +311,11 @@ U 1 1 61ECD161
 P 2250 2150
 F 0 "HORN_EN1" V 2341 2022 50  0000 R CNN
 F 1 "Conn_?" V 2250 2022 50  0001 R CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_502443-0270_1x02-1MP_P2.00mm_Vertical" H 2450 2350 60  0001 L CNN
-F 3 "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987650-3302.PDF" H 2450 2450 60  0001 L CNN
-F 4 "WM10606CT-ND" H 2450 2550 60  0001 L CNN "DigiKeyPN"
-F 5 "5033950410" H 2450 2650 60  0001 L CNN "MPN"
+F 2 "Connector_Molex:Molex_CLIK-Mate_502386-0270_1x02-1MP_P1.25mm_Horizontal" H 2450 2350 60  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/5023860270_sd.pdf" H 2450 2450 60  0001 L CNN
+F 4 "WM4946CT-ND" H 2450 2550 60  0001 L CNN "DigiKeyPN"
+F 5 "5023860270" H 2450 2650 60  0001 L CNN "MPN"
 	1    2250 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue BRAKELIGHTS_EN1
-U 1 1 61ECDF47
-P 2250 2450
-F 0 "BRAKELIGHTS_EN1" V 2341 2322 50  0000 R CNN
-F 1 "Conn_?" V 2250 2322 50  0001 R CNN
-F 2 "" H 2450 2650 60  0001 L CNN
-F 3 "" H 2450 2750 60  0001 L CNN
-F 4 "" H 2450 2850 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 2450 2950 60  0001 L CNN "MPN"
-	1    2250 2450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue STARTER_MOTOR_EN1
-U 1 1 61ECE961
-P 2250 2750
-F 0 "STARTER_MOTOR_EN1" V 2341 2622 50  0000 R CNN
-F 1 "Conn_?" V 2250 2622 50  0001 R CNN
-F 2 "" H 2450 2950 60  0001 L CNN
-F 3 "" H 2450 3050 60  0001 L CNN
-F 4 "" H 2450 3150 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 2450 3250 60  0001 L CNN "MPN"
-	1    2250 2750
 	0    -1   -1   0   
 $EndComp
 Text Notes 6250 5950 0    50   ~ 0
@@ -506,18 +458,7 @@ Wire Wire Line
 	7750 4300 7750 4250
 Text Notes 1800 1550 0    50   ~ 0
 - MOLEX for button connection to PCB (Ivy to find part numbers)\n- Barrel Jack (or any alternative from Ivy) \n   for Battery to PCB (only small 12V)
-$Comp
-L power:GND #PWR08
-U 1 1 61EE358E
-P 3700 2150
-F 0 "#PWR08" H 3700 1900 50  0001 C CNN
-F 1 "GND" H 3705 1977 50  0000 C CNN
-F 2 "" H 3700 2150 50  0001 C CNN
-F 3 "" H 3700 2150 50  0001 C CNN
-	1    3700 2150
-	1    0    0    -1  
-$EndComp
-Text GLabel 3700 2050 0    50   Input ~ 0
+Text GLabel 3550 2050 0    50   Input ~ 0
 SMALL_12V
 $Comp
 L power:GND #PWR010
@@ -601,26 +542,15 @@ STARTER AND ECU\n
 Text Notes 800  1050 0    98   ~ 0
 POWER AND CONNECTIONS\n
 $Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue SMALL_12V_BATTERY_CONN1
-U 1 1 61ECC655
-P 3800 2150
-F 0 "SMALL_12V_BATTERY_CONN1" V 3891 2022 50  0000 R CNN
-F 1 "Conn_?" V 3800 2022 50  0001 R CNN
-F 2 "" H 4000 2350 60  0001 L CNN
-F 3 "" H 4000 2450 60  0001 L CNN
-F 4 "" H 4000 2550 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 4000 2650 60  0001 L CNN "MPN"
-	1    3800 2150
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x04 J1
 U 1 1 61E4C7B0
 P 2450 3300
 F 0 "J1" H 2530 3292 50  0000 L CNN
 F 1 "ECU_EN_CONNECTION" H 2530 3201 50  0000 L CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0470_1x04-1MP_P1.50mm_Vertical" H 2450 3300 50  0001 C CNN
-F 3 "~" H 2450 3300 50  0001 C CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502386-0470_1x04-1MP_P1.25mm_Horizontal" H 2450 3300 50  0001 C CNN
+F 3 "4 Position Receptacle Connector 0.049\" (1.25mm) Surface Mount, Right Angle Tin" H 2450 3300 50  0001 C CNN
+F 4 "WM4948CT-ND" H 2450 3300 50  0001 C CNN "DigikeyPN"
+F 5 "5023860470" H 2450 3300 50  0001 C CNN "MPN"
 	1    2450 3300
 	1    0    0    -1  
 $EndComp
@@ -751,4 +681,79 @@ Wire Notes Line
 	4050 7650 800  7650
 Wire Notes Line
 	800  7650 800  4150
+$Comp
+L Connector:Barrel_Jack_Switch J?
+U 1 1 61E7CEA3
+P 3850 1950
+F 0 "J?" H 3620 1900 50  0000 R CNN
+F 1 "SMALL_12V_BATTERY_CONNECTOR" H 3620 1991 50  0000 R CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal" H 3900 1910 50  0001 C CNN
+F 3 "https://www.cuidevices.com/product/resource/pj-036ah-smt-tr.pdf" H 3900 1910 50  0001 C CNN
+F 4 "CP-036AHPJCT-ND" H 3850 1950 50  0001 C CNN "DigikeyPN"
+F 5 "PJ-036AH-SMT-TR" H 3850 1950 50  0001 C CNN "MPN"
+	1    3850 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 61EE358E
+P 3550 1850
+F 0 "#PWR08" H 3550 1600 50  0001 C CNN
+F 1 "GND" H 3555 1677 50  0000 C CNN
+F 2 "" H 3550 1850 50  0001 C CNN
+F 3 "" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	0    1    1    0   
+$EndComp
+NoConn ~ 3550 1950
+$Comp
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue BRAKELIGHTS_EN1
+U 1 1 61E8C377
+P 2250 2450
+F 0 "BRAKELIGHTS_EN1" V 2341 2322 50  0000 R CNN
+F 1 "Conn_?" V 2250 2322 50  0001 R CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502386-0270_1x02-1MP_P1.25mm_Horizontal" H 2450 2650 60  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/5023860270_sd.pdf" H 2450 2750 60  0001 L CNN
+F 4 "WM4946CT-ND" H 2450 2850 60  0001 L CNN "DigiKeyPN"
+F 5 "5023860270" H 2450 2950 60  0001 L CNN "MPN"
+	1    2250 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue STARTER_MOTOR_EN1
+U 1 1 61E8EEF4
+P 2250 2750
+F 0 "STARTER_MOTOR_EN1" V 2341 2622 50  0000 R CNN
+F 1 "Conn_?" V 2250 2622 50  0001 R CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_502386-0270_1x02-1MP_P1.25mm_Horizontal" H 2450 2950 60  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/5023860270_sd.pdf" H 2450 3050 60  0001 L CNN
+F 4 "WM4946CT-ND" H 2450 3150 60  0001 L CNN "DigiKeyPN"
+F 5 "5023860270" H 2450 3250 60  0001 L CNN "MPN"
+	1    2250 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R #R3
+U 1 1 61E64182
+P 3350 5550
+F 0 "#R3" V 3143 5550 50  0000 C CNN
+F 1 "HORN" V 3234 5550 50  0000 C CNN
+F 2 "" V 3280 5550 50  0001 C CNN
+F 3 "~" H 3350 5550 50  0001 C CNN
+	1    3350 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E941D5
+P 2250 7000
+F 0 "R?" H 2320 7046 50  0000 L CNN
+F 1 "10k" H 2320 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2180 7000 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2250 7000 50  0001 C CNN
+F 4 "RC0805FR-0710RL" H 2250 7000 50  0001 C CNN "MPN"
+F 5 "311-10.0CRCT-ND" H 2250 7000 50  0001 C CNN "DigikeyPN"
+	1    2250 7000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
