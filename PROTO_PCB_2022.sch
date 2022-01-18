@@ -14,43 +14,43 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:Q_NMOS_DGS HORN_MOSFET
+L Device:Q_NMOS_DGS HORN_MOSFET1
 U 1 1 618BB460
-P 2800 5450
-F 0 "HORN_MOSFET" H 3004 5496 50  0000 L CNN
-F 1 "Q1" H 3004 5405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3000 5550 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 2800 5450 50  0001 C CNN
-F 4 "RK7002BMT116" H 2800 5450 50  0001 C CNN "MPN"
-F 5 "RK7002BMT116CT-ND" H 2800 5450 50  0001 C CNN "DigiKeyPN"
-	1    2800 5450
+P 2650 5050
+F 0 "HORN_MOSFET1" H 2854 5096 50  0000 L CNN
+F 1 "Q1" H 2854 5005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2850 5150 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 2650 5050 50  0001 C CNN
+F 4 "RK7002BMT116" H 2650 5050 50  0001 C CNN "MPN"
+F 5 "RK7002BMT116CT-ND" H 2650 5050 50  0001 C CNN "DigiKeyPN"
+	1    2650 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 5650 2900 5750
+	2750 5250 2750 5350
 Wire Wire Line
-	2400 5450 2400 5550
+	2250 5050 2250 5150
 Wire Wire Line
-	2400 5850 2400 5950
+	2250 5450 2250 5550
 $Comp
-L Device:Q_NMOS_DGS BRAKELIGHTS_MOSFET
+L Device:Q_NMOS_DGS BRAKELIGHTS_MOSFET1
 U 1 1 618C50B5
-P 3100 7450
-F 0 "BRAKELIGHTS_MOSFET" H 3305 7496 50  0000 L CNN
-F 1 "Q3" H 3305 7405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 7550 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 3100 7450 50  0001 C CNN
-F 4 "RK7002BMT116" H 3100 7450 50  0001 C CNN "MPN"
-F 5 "RK7002BMT116CT-ND" H 3100 7450 50  0001 C CNN "DigiKeyPN"
-	1    3100 7450
+P 2650 6750
+F 0 "BRAKELIGHTS_MOSFET1" H 2855 6796 50  0000 L CNN
+F 1 "Q3" H 2855 6705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2850 6850 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 2650 6750 50  0001 C CNN
+F 4 "RK7002BMT116" H 2650 6750 50  0001 C CNN "MPN"
+F 5 "RK7002BMT116CT-ND" H 2650 6750 50  0001 C CNN "DigiKeyPN"
+	1    2650 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 7450 2700 7450
+	2450 6750 2250 6750
 Wire Wire Line
-	2700 7850 2700 8000
+	2250 7150 2250 7300
 Wire Wire Line
-	2700 7450 2700 7550
+	2250 6750 2250 6850
 Text GLabel 7100 2600 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_2
 Text GLabel 7300 4450 0    50   Input ~ 0
@@ -58,43 +58,43 @@ STARTER_EN_PUSHBUTTON
 $Comp
 L Device:R R2
 U 1 1 619A0EBB
-P 2700 7700
-F 0 "R2" H 2770 7746 50  0000 L CNN
-F 1 "10k" H 2770 7655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2630 7700 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 2700 7700 50  0001 C CNN
-F 4 "RC1005F103CS" H 2700 7700 50  0001 C CNN "MPN"
-	1    2700 7700
+P 2250 7000
+F 0 "R2" H 2320 7046 50  0000 L CNN
+F 1 "10k" H 2320 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2180 7000 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 2250 7000 50  0001 C CNN
+F 4 "RC1005F103CS" H 2250 7000 50  0001 C CNN "MPN"
+	1    2250 7000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR01
+L power:GND #PWR05
 U 1 1 61A29F4D
-P 2700 8000
-F 0 "#PWR01" H 2700 7750 50  0001 C CNN
-F 1 "GND" H 2705 7827 50  0000 C CNN
-F 2 "" H 2700 8000 50  0001 C CNN
-F 3 "" H 2700 8000 50  0001 C CNN
-	1    2700 8000
+P 2250 7300
+F 0 "#PWR05" H 2250 7050 50  0001 C CNN
+F 1 "GND" H 2255 7127 50  0000 C CNN
+F 2 "" H 2250 7300 50  0001 C CNN
+F 3 "" H 2250 7300 50  0001 C CNN
+	1    2250 7300
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 61AB1752
-P 2400 5700
-F 0 "R1" H 2470 5746 50  0000 L CNN
-F 1 "10k" H 2470 5655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2330 5700 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 2400 5700 50  0001 C CNN
-F 4 "RC1005F103CS" H 2400 5700 50  0001 C CNN "MPN"
-	1    2400 5700
+P 2250 5300
+F 0 "R1" H 2320 5346 50  0000 L CNN
+F 1 "10k" H 2320 5255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" V 2180 5300 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/RC_Series_ds.pdf" H 2250 5300 50  0001 C CNN
+F 4 "RC1005F103CS" H 2250 5300 50  0001 C CNN "MPN"
+	1    2250 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0104
+L power:GND #PWR014
 U 1 1 61AC03EA
 P 8250 2450
-F 0 "#PWR0104" H 8250 2200 50  0001 C CNN
+F 0 "#PWR014" H 8250 2200 50  0001 C CNN
 F 1 "GND" H 8255 2277 50  0000 C CNN
 F 2 "" H 8250 2450 50  0001 C CNN
 F 3 "" H 8250 2450 50  0001 C CNN
@@ -102,149 +102,136 @@ F 3 "" H 8250 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0102
+L power:PWR_FLAG #FLG01
 U 1 1 61AC8539
-P 2700 8000
-F 0 "#FLG0102" H 2700 8075 50  0001 C CNN
-F 1 "PWR_FLAG" V 2700 8127 50  0000 L CNN
-F 2 "" H 2700 8000 50  0001 C CNN
-F 3 "~" H 2700 8000 50  0001 C CNN
-	1    2700 8000
+P 2250 7300
+F 0 "#FLG01" H 2250 7375 50  0001 C CNN
+F 1 "PWR_FLAG" V 2250 7427 50  0000 L CNN
+F 2 "" H 2250 7300 50  0001 C CNN
+F 3 "~" H 2250 7300 50  0001 C CNN
+	1    2250 7300
 	0    -1   -1   0   
 $EndComp
-Connection ~ 2700 8000
-Text Notes 5800 1150 0    50   ~ 0
-To Do:\n1. Add Mini ATtiny85 board\n2. Add Oxygen Sensor\n4. ECU has to kill electronics too (check and implement this)\n5. Brakelight Enable - not from a button, but from the reed switch (consider an alternative method) - Sarah to find a reed switch\n\n(NEW) 6. Add an extra connection terminal for the 12V battery in case
+Connection ~ 2250 7300
+Text Notes 5750 1050 0    50   ~ 0
+To Do:\n1. DONE - Add Mini ATtiny85 board\n2. DONE - Add Oxygen Sensor (header)\n6. IVY - Add an extra connection terminal for the 12V battery in case
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push #SW2
 U 1 1 61E45701
-P 1950 6900
-F 0 "SW?" H 1950 7185 50  0000 C CNN
-F 1 "BRAKELIGHTS_BUTTON???" H 1950 7094 50  0000 C CNN
-F 2 "" H 1950 7100 50  0001 C CNN
-F 3 "~" H 1950 7100 50  0001 C CNN
-	1    1950 6900
+P 1500 6200
+F 0 "#SW2" H 1500 6485 50  0000 C CNN
+F 1 "BRAKELIGHTS_REED_SWITCH" H 1500 6394 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_REED_CT10-XXXX-G1" H 1500 6400 50  0001 C CNN
+F 3 "https://www.cotorelay.com/wp-content/uploads/2014/09/CotoClassic-CT10-Datasheet.pdf" H 1500 6400 50  0001 C CNN
+F 4 "CT10-2540-G1" H 1500 6200 50  0001 C CNN "MPN"
+F 5 "306-1126-1-ND" H 1500 6200 50  0001 C CNN "DigiKeyPN"
+	1    1500 6200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Switch:SW_Push SW?
-U 1 1 61E464A3
-P 1900 4900
-F 0 "SW?" H 1900 5185 50  0000 C CNN
-F 1 "HORN_PUSHBUTTON" H 1900 5094 50  0000 C CNN
-F 2 "" H 1900 5100 50  0001 C CNN
-F 3 "~" H 1900 5100 50  0001 C CNN
-	1    1900 4900
-	1    0    0    -1  
-$EndComp
-Text GLabel 2400 5450 0    50   Input ~ 0
+Text GLabel 2250 5050 0    50   Input ~ 0
 HORN_EN_12V_SIGNAL
-Text GLabel 2700 7450 0    50   Input ~ 0
+Text GLabel 2250 6750 0    50   Input ~ 0
 BRAKELIGHTS_EN_12V_SIGNAL
-Text Notes 1250 4350 0    98   ~ 0
+Text Notes 800  4100 0    98   ~ 0
 HORN AND BRAKELIGHTS
-Text GLabel 2100 4900 2    50   Input ~ 0
+Text GLabel 1700 4650 2    50   Input ~ 0
 HORN_EN_12V_SIGNAL
-Text GLabel 2150 6900 2    50   Input ~ 0
+Text GLabel 1700 6200 2    50   Input ~ 0
 BRAKELIGHTS_EN_12V_SIGNAL
-Text GLabel 1700 4900 0    50   Input ~ 0
+Text GLabel 1300 4650 0    50   Input ~ 0
 SMALL_12V
-Text GLabel 1750 6900 0    50   Input ~ 0
+Text GLabel 1300 6200 0    50   Input ~ 0
 SMALL_12V
 Wire Wire Line
-	2600 5450 2400 5450
+	2450 5050 2250 5050
 $Comp
-L Device:R R?
+L Device:R #R3
 U 1 1 61E64182
-P 3500 5950
-F 0 "R?" V 3293 5950 50  0000 C CNN
-F 1 "HORN" V 3384 5950 50  0000 C CNN
-F 2 "" V 3430 5950 50  0001 C CNN
-F 3 "~" H 3500 5950 50  0001 C CNN
-	1    3500 5950
+P 3350 5550
+F 0 "#R3" V 3143 5550 50  0000 C CNN
+F 1 "HORN" V 3234 5550 50  0000 C CNN
+F 2 "" V 3280 5550 50  0001 C CNN
+F 3 "~" H 3350 5550 50  0001 C CNN
+	1    3350 5550
 	0    1    1    0   
 $EndComp
-Text GLabel 2900 5750 2    50   Input ~ 0
+Text GLabel 2750 5350 2    50   Input ~ 0
 HORN_PWR
-Text GLabel 2900 5150 2    50   Input ~ 0
+Text GLabel 2750 4750 2    50   Input ~ 0
 SMALL_12V
-Wire Notes Line
-	4700 4400 4700 8500
-Wire Notes Line
-	1250 8500 1250 4400
 Text Notes 6000 2300 0    50   ~ 0
 When Coil is Powered: ECU is not powered - Relay is disconnected\nWhen Coil is Not Powered: ECU is powered - Relay is connected\n> NORMALLY ON RELAY, 5A ON CONTACTS\n\n\n
 Wire Wire Line
-	2900 5250 2900 5150
+	2750 4850 2750 4750
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR04
 U 1 1 61AC0D4C
-P 2400 5950
-F 0 "#PWR0102" H 2400 5700 50  0001 C CNN
-F 1 "GND" H 2405 5777 50  0000 C CNN
-F 2 "" H 2400 5950 50  0001 C CNN
-F 3 "" H 2400 5950 50  0001 C CNN
-	1    2400 5950
+P 2250 5550
+F 0 "#PWR04" H 2250 5300 50  0001 C CNN
+F 1 "GND" H 2255 5377 50  0000 C CNN
+F 2 "" H 2250 5550 50  0001 C CNN
+F 3 "" H 2250 5550 50  0001 C CNN
+	1    2250 5550
 	1    0    0    -1  
 $EndComp
-Text GLabel 3350 5950 0    50   Input ~ 0
+Text GLabel 3200 5550 0    50   Input ~ 0
 HORN_PWR
 Wire Wire Line
-	3700 5950 3700 6050
+	3550 5550 3550 5650
 $Comp
-L power:GND #PWR?
+L power:GND #PWR07
 U 1 1 61E751B9
-P 3700 6050
-F 0 "#PWR?" H 3700 5800 50  0001 C CNN
-F 1 "GND" H 3705 5877 50  0000 C CNN
-F 2 "" H 3700 6050 50  0001 C CNN
-F 3 "" H 3700 6050 50  0001 C CNN
-	1    3700 6050
+P 3550 5650
+F 0 "#PWR07" H 3550 5400 50  0001 C CNN
+F 1 "GND" H 3555 5477 50  0000 C CNN
+F 2 "" H 3550 5650 50  0001 C CNN
+F 3 "" H 3550 5650 50  0001 C CNN
+	1    3550 5650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 5950 3650 5950
+	3550 5550 3500 5550
 Wire Wire Line
-	3200 7650 3200 7750
+	2750 6950 2750 7050
 $Comp
-L Device:R R?
+L Device:R #R4
 U 1 1 61E794DB
-P 4150 8000
-F 0 "R?" V 3943 8000 50  0000 C CNN
-F 1 "BRAKELIGHTS" V 4034 8000 50  0000 C CNN
-F 2 "" V 4080 8000 50  0001 C CNN
-F 3 "~" H 4150 8000 50  0001 C CNN
-	1    4150 8000
+P 3700 7300
+F 0 "#R4" V 3493 7300 50  0000 C CNN
+F 1 "BRAKELIGHTS" V 3584 7300 50  0000 C CNN
+F 2 "" V 3630 7300 50  0001 C CNN
+F 3 "~" H 3700 7300 50  0001 C CNN
+	1    3700 7300
 	0    1    1    0   
 $EndComp
-Text GLabel 3200 7750 2    50   Input ~ 0
+Text GLabel 2750 7050 2    50   Input ~ 0
 BRAKELIGHTS_PWR
-Text GLabel 3200 7150 2    50   Input ~ 0
+Text GLabel 2750 6450 2    50   Input ~ 0
 SMALL_12V
 Wire Wire Line
-	3200 7250 3200 7150
-Text GLabel 4000 8000 0    50   Input ~ 0
+	2750 6550 2750 6450
+Text GLabel 3550 7300 0    50   Input ~ 0
 BRAKELIGHTS_PWR
 Wire Wire Line
-	4350 8000 4350 8100
+	3900 7300 3900 7400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR09
 U 1 1 61E794E6
-P 4350 8100
-F 0 "#PWR?" H 4350 7850 50  0001 C CNN
-F 1 "GND" H 4355 7927 50  0000 C CNN
-F 2 "" H 4350 8100 50  0001 C CNN
-F 3 "" H 4350 8100 50  0001 C CNN
-	1    4350 8100
+P 3900 7400
+F 0 "#PWR09" H 3900 7150 50  0001 C CNN
+F 1 "GND" H 3905 7227 50  0000 C CNN
+F 2 "" H 3900 7400 50  0001 C CNN
+F 3 "" H 3900 7400 50  0001 C CNN
+	1    3900 7400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4350 8000 4300 8000
+	3900 7300 3850 7300
 $Comp
-L Relay:RT314A12 K?
+L Relay:RT314A12 K1
 U 1 1 61E8A836
 P 7800 2900
-F 0 "K?" H 8230 2946 50  0000 L CNN
+F 0 "K1" H 8230 2946 50  0000 L CNN
 F 1 "RT214012" H 8230 2855 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_Schrack-RT1-FormC_RM5mm" H 9350 2850 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=RT1_bistable&DocType=DS&DocLang=English" H 7800 2900 50  0001 C CNN
@@ -269,15 +256,15 @@ Wire Wire Line
 	7850 3450 8000 3450
 Wire Wire Line
 	8000 3450 8000 3200
-Text Notes 5800 1400 0    50   ~ 0
+Text Notes 5750 1300 0    50   ~ 0
 To Do:\n1. Talk to Powertrain about ECU: KEYSW, Relay and O2 Sensor\n
 Text GLabel 7850 3450 0    50   Input ~ 0
 ECU_KEYSW_WIRE
 $Comp
-L power:GND #PWR?
+L power:GND #PWR011
 U 1 1 61E948EF
 P 7600 3200
-F 0 "#PWR?" H 7600 2950 50  0001 C CNN
+F 0 "#PWR011" H 7600 2950 50  0001 C CNN
 F 1 "GND" H 7605 3027 50  0000 C CNN
 F 2 "" H 7600 3200 50  0001 C CNN
 F 3 "" H 7600 3200 50  0001 C CNN
@@ -285,10 +272,10 @@ F 3 "" H 7600 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Relay:RT314A12 K?
+L Relay:RT314A12 K2
 U 1 1 61E9808B
 P 7800 4750
-F 0 "K?" H 8230 4796 50  0000 L CNN
+F 0 "K2" H 8230 4796 50  0000 L CNN
 F 1 "RT214012" H 8230 4705 50  0000 L CNN
 F 2 "Relay_THT:Relay_SPDT_Schrack-RT1-FormC_RM5mm" H 9350 4700 50  0001 C CNN
 F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=RT1_bistable&DocType=DS&DocLang=English" H 7800 4750 50  0001 C CNN
@@ -310,10 +297,10 @@ Wire Wire Line
 Text GLabel 7700 5600 0    50   Input ~ 0
 VESC_POWER_CONNECTION
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 61E9809C
 P 7600 5050
-F 0 "#PWR?" H 7600 4800 50  0001 C CNN
+F 0 "#PWR012" H 7600 4800 50  0001 C CNN
 F 1 "GND" H 7605 4877 50  0000 C CNN
 F 2 "" H 7600 5050 50  0001 C CNN
 F 3 "" H 7600 5050 50  0001 C CNN
@@ -321,10 +308,10 @@ F 3 "" H 7600 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Fuse STARTER_FUSE
+L Device:Fuse #STARTER_FUSE1
 U 1 1 618D380A
 P 9650 5100
-F 0 "STARTER_FUSE" V 9453 5100 50  0000 C CNN
+F 0 "#STARTER_FUSE1" V 9453 5100 50  0000 C CNN
 F 1 "Fuse_1" V 9544 5100 50  0000 C CNN
 F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 9580 5100 50  0001 C CNN
 F 3 "https://www.keyelco.com/userAssets/file/M65p43.pdf" H 9650 5100 50  0001 C CNN
@@ -341,10 +328,10 @@ Wire Wire Line
 Text Notes 6200 4100 0    50   ~ 0
 Starter Motor is normally not connected - only powered when push button is being pressed
 $Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue HORN_EN
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue HORN_EN1
 U 1 1 61ECD161
 P 2250 2150
-F 0 "HORN_EN" V 2341 2022 50  0000 R CNN
+F 0 "HORN_EN1" V 2341 2022 50  0000 R CNN
 F 1 "Conn_?" V 2250 2022 50  0001 R CNN
 F 2 "Connector_Molex:Molex_CLIK-Mate_502443-0270_1x02-1MP_P2.00mm_Vertical" H 2450 2350 60  0001 L CNN
 F 3 "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987650-3302.PDF" H 2450 2450 60  0001 L CNN
@@ -354,10 +341,10 @@ F 5 "5033950410" H 2450 2650 60  0001 L CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue BRAKELIGHTS_EN
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue BRAKELIGHTS_EN1
 U 1 1 61ECDF47
 P 2250 2450
-F 0 "BRAKELIGHTS_EN" V 2341 2322 50  0000 R CNN
+F 0 "BRAKELIGHTS_EN1" V 2341 2322 50  0000 R CNN
 F 1 "Conn_?" V 2250 2322 50  0001 R CNN
 F 2 "" H 2450 2650 60  0001 L CNN
 F 3 "" H 2450 2750 60  0001 L CNN
@@ -367,10 +354,10 @@ F 5 "" H 2450 2950 60  0001 L CNN "MPN"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue STARTER_MOTOR_EN
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue STARTER_MOTOR_EN1
 U 1 1 61ECE961
 P 2250 2750
-F 0 "STARTER_MOTOR_EN" V 2341 2622 50  0000 R CNN
+F 0 "STARTER_MOTOR_EN1" V 2341 2622 50  0000 R CNN
 F 1 "Conn_?" V 2250 2622 50  0001 R CNN
 F 2 "" H 2450 2950 60  0001 L CNN
 F 3 "" H 2450 3050 60  0001 L CNN
@@ -382,10 +369,10 @@ $EndComp
 Text Notes 6250 5950 0    50   ~ 0
 SHOULD WE SEPARATE SIGNAL_12V FROM POWER_12V?
 $Comp
-L power:GND #PWR?
+L power:GND #PWR03
 U 1 1 61EE8800
 P 2150 2750
-F 0 "#PWR?" H 2150 2500 50  0001 C CNN
+F 0 "#PWR03" H 2150 2500 50  0001 C CNN
 F 1 "GND" H 2155 2577 50  0000 C CNN
 F 2 "" H 2150 2750 50  0001 C CNN
 F 3 "" H 2150 2750 50  0001 C CNN
@@ -393,10 +380,10 @@ F 3 "" H 2150 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 61EE8FFF
 P 2150 2450
-F 0 "#PWR?" H 2150 2200 50  0001 C CNN
+F 0 "#PWR02" H 2150 2200 50  0001 C CNN
 F 1 "GND" H 2155 2277 50  0000 C CNN
 F 2 "" H 2150 2450 50  0001 C CNN
 F 3 "" H 2150 2450 50  0001 C CNN
@@ -404,10 +391,10 @@ F 3 "" H 2150 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR01
 U 1 1 61EE9788
 P 2150 2150
-F 0 "#PWR?" H 2150 1900 50  0001 C CNN
+F 0 "#PWR01" H 2150 1900 50  0001 C CNN
 F 1 "GND" H 2155 1977 50  0000 C CNN
 F 2 "" H 2150 2150 50  0001 C CNN
 F 3 "" H 2150 2150 50  0001 C CNN
@@ -415,14 +402,14 @@ F 3 "" H 2150 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR06
 U 1 1 61EE9E38
-P 3350 3550
-F 0 "#PWR?" H 3350 3300 50  0001 C CNN
-F 1 "GND" H 3355 3377 50  0000 C CNN
-F 2 "" H 3350 3550 50  0001 C CNN
-F 3 "" H 3350 3550 50  0001 C CNN
-	1    3350 3550
+P 2100 3500
+F 0 "#PWR06" H 2100 3250 50  0001 C CNN
+F 1 "GND" H 2105 3327 50  0000 C CNN
+F 2 "" H 2100 3500 50  0001 C CNN
+F 3 "" H 2100 3500 50  0001 C CNN
+	1    2100 3500
 	1    0    0    -1  
 $EndComp
 Text GLabel 2000 2650 0    50   Input ~ 0
@@ -432,34 +419,25 @@ BRAKELIGHTS_EN_12V_SIGNAL
 Text GLabel 2000 2050 0    50   Input ~ 0
 HORN_EN_12V_SIGNAL
 Wire Wire Line
-	3350 3550 3500 3550
+	2100 3500 2250 3500
 Wire Wire Line
 	2000 2050 2150 2050
 Wire Wire Line
 	2000 2350 2150 2350
 Wire Wire Line
 	2000 2650 2150 2650
-$Comp
-L Switch:SW_Push SW?
-U 1 1 61EF196A
-P 9400 2600
-F 0 "SW?" H 9400 2885 50  0000 C CNN
-F 1 "ECU_KILL_TOGGLESWITCH_1" H 9400 2794 50  0000 C CNN
-F 2 "" H 9400 2800 50  0001 C CNN
-F 3 "~" H 9400 2800 50  0001 C CNN
-	1    9400 2600
-	1    0    0    -1  
-$EndComp
 Text GLabel 9200 2600 0    50   Input ~ 0
 SMALL_12V
 $Comp
-L Switch:SW_Push SW?
+L Switch:SW_Push #SW6
 U 1 1 61EF2644
 P 9500 4650
-F 0 "SW?" H 9500 4935 50  0000 C CNN
+F 0 "#SW6" H 9500 4935 50  0000 C CNN
 F 1 "STARTERMOTOR_BUTTON" H 9500 4844 50  0000 C CNN
-F 2 "" H 9500 4850 50  0001 C CNN
-F 3 "~" H 9500 4850 50  0001 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 9500 4850 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1341/d6.pdf" H 9500 4850 50  0001 C CNN
+F 4 "D6C40 F1 LFS" H 9500 4650 50  0001 C CNN "MPN"
+F 5 "401-1966-ND" H 9500 4650 50  0001 C CNN "DigiKeyPN"
 	1    9500 4650
 	1    0    0    -1  
 $EndComp
@@ -476,10 +454,10 @@ ECU_KILL_EN_TOGGLESWITCH_1
 Wire Wire Line
 	9200 4650 9300 4650
 $Comp
-L Device:R R?
+L Device:R #R5
 U 1 1 61F0AB7D
 P 10200 5100
-F 0 "R?" V 9993 5100 50  0000 C CNN
+F 0 "#R5" V 9993 5100 50  0000 C CNN
 F 1 "STARTER MOTOR" V 10084 5100 50  0000 C CNN
 F 2 "" V 10130 5100 50  0001 C CNN
 F 3 "~" H 10200 5100 50  0001 C CNN
@@ -489,10 +467,10 @@ $EndComp
 Wire Wire Line
 	10400 5100 10400 5200
 $Comp
-L power:GND #PWR?
+L power:GND #PWR015
 U 1 1 61F0AB85
 P 10400 5200
-F 0 "#PWR?" H 10400 4950 50  0001 C CNN
+F 0 "#PWR015" H 10400 4950 50  0001 C CNN
 F 1 "GND" H 10405 5027 50  0000 C CNN
 F 2 "" H 10400 5200 50  0001 C CNN
 F 3 "" H 10400 5200 50  0001 C CNN
@@ -514,10 +492,10 @@ Wire Notes Line
 Wire Notes Line
 	9500 5050 9500 5150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR013
 U 1 1 61F20E2C
 P 7750 4300
-F 0 "#PWR?" H 7750 4050 50  0001 C CNN
+F 0 "#PWR013" H 7750 4050 50  0001 C CNN
 F 1 "GND" H 7755 4127 50  0000 C CNN
 F 2 "" H 7750 4300 50  0001 C CNN
 F 3 "" H 7750 4300 50  0001 C CNN
@@ -529,45 +507,45 @@ Wire Wire Line
 Text Notes 1800 1550 0    50   ~ 0
 - MOLEX for button connection to PCB (Ivy to find part numbers)\n- Barrel Jack (or any alternative from Ivy) \n   for Battery to PCB (only small 12V)
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 61EE358E
-P 4000 1900
-F 0 "#PWR?" H 4000 1650 50  0001 C CNN
-F 1 "GND" H 4005 1727 50  0000 C CNN
-F 2 "" H 4000 1900 50  0001 C CNN
-F 3 "" H 4000 1900 50  0001 C CNN
-	1    4000 1900
+P 3700 2150
+F 0 "#PWR08" H 3700 1900 50  0001 C CNN
+F 1 "GND" H 3705 1977 50  0000 C CNN
+F 2 "" H 3700 2150 50  0001 C CNN
+F 3 "" H 3700 2150 50  0001 C CNN
+	1    3700 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 1800 0    50   Input ~ 0
+Text GLabel 3700 2050 0    50   Input ~ 0
 SMALL_12V
 $Comp
-L power:GND #PWR?
+L power:GND #PWR010
 U 1 1 61EE2CFA
-P 4450 2600
-F 0 "#PWR?" H 4450 2350 50  0001 C CNN
-F 1 "GND" H 4455 2427 50  0000 C CNN
-F 2 "" H 4450 2600 50  0001 C CNN
-F 3 "" H 4450 2600 50  0001 C CNN
-	1    4450 2600
+P 4900 3400
+F 0 "#PWR010" H 4900 3150 50  0001 C CNN
+F 1 "GND" H 4905 3227 50  0000 C CNN
+F 2 "" H 4900 3400 50  0001 C CNN
+F 3 "" H 4900 3400 50  0001 C CNN
+	1    4900 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4450 2550 4450 2600
+	4900 3350 4900 3400
 Wire Wire Line
-	4300 2550 4450 2550
+	4750 3350 4900 3350
 $Comp
-L Device:Battery_Cell BT?
+L Device:Battery_Cell #BT1
 U 1 1 61EB6EF2
-P 4200 2550
-F 0 "BT?" V 4455 2600 50  0000 C CNN
-F 1 "SMALL_12V_BATTERY" V 4364 2600 50  0000 C CNN
-F 2 "" V 4200 2610 50  0001 C CNN
-F 3 "~" V 4200 2610 50  0001 C CNN
-	1    4200 2550
+P 4650 3350
+F 0 "#BT1" V 4905 3400 50  0000 C CNN
+F 1 "SMALL_12V_BATTERY" V 4814 3400 50  0000 C CNN
+F 2 "" V 4650 3410 50  0001 C CNN
+F 3 "~" V 4650 3410 50  0001 C CNN
+	1    4650 3350
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4000 2550 0    50   Input ~ 0
+Text GLabel 4450 3350 0    50   Input ~ 0
 SMALL_12V
 Wire Wire Line
 	7100 2600 7250 2600
@@ -582,44 +560,22 @@ Wire Wire Line
 	7100 2800 7250 2800
 Wire Wire Line
 	7250 2800 7250 2600
-Text GLabel 3350 3350 0    50   Input ~ 0
+Text GLabel 2100 3300 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_2
-Text GLabel 3350 3450 0    50   Input ~ 0
+Text GLabel 2100 3400 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_3
-Text GLabel 3350 3250 0    50   Input ~ 0
+Text GLabel 2100 3200 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_1
 Wire Wire Line
-	3350 3250 3500 3250
+	2100 3200 2250 3200
 Wire Wire Line
-	3350 3350 3500 3350
+	2100 3300 2250 3300
 Wire Wire Line
-	3350 3450 3500 3450
-$Comp
-L Switch:SW_Push SW?
-U 1 1 61F362BE
-P 9400 3000
-F 0 "SW?" H 9400 3285 50  0000 C CNN
-F 1 "ECU_KILL_TOGGLESWITCH_2" H 9400 3194 50  0000 C CNN
-F 2 "" H 9400 3200 50  0001 C CNN
-F 3 "~" H 9400 3200 50  0001 C CNN
-	1    9400 3000
-	1    0    0    -1  
-$EndComp
+	2100 3400 2250 3400
 Text GLabel 9200 3000 0    50   Input ~ 0
 SMALL_12V
 Text GLabel 9600 3000 2    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_2
-$Comp
-L Switch:SW_Push SW?
-U 1 1 61F3728F
-P 9400 3400
-F 0 "SW?" H 9400 3685 50  0000 C CNN
-F 1 "ECU_KILL_TOGGLESWITCH_3" H 9400 3594 50  0000 C CNN
-F 2 "" H 9400 3600 50  0001 C CNN
-F 3 "~" H 9400 3600 50  0001 C CNN
-	1    9400 3400
-	1    0    0    -1  
-$EndComp
 Text GLabel 9200 3400 0    50   Input ~ 0
 SMALL_12V
 Text GLabel 9600 3400 2    50   Input ~ 0
@@ -645,27 +601,154 @@ STARTER AND ECU\n
 Text Notes 800  1050 0    98   ~ 0
 POWER AND CONNECTIONS\n
 $Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue SMALL_12V_BATTERY_CONN?
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue SMALL_12V_BATTERY_CONN1
 U 1 1 61ECC655
-P 4100 1900
-F 0 "SMALL_12V_BATTERY_CONN?" V 4191 1772 50  0000 R CNN
-F 1 "Conn_?" V 4100 1772 50  0001 R CNN
-F 2 "" H 4300 2100 60  0001 L CNN
-F 3 "" H 4300 2200 60  0001 L CNN
-F 4 "" H 4300 2300 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 4300 2400 60  0001 L CNN "MPN"
-	1    4100 1900
+P 3800 2150
+F 0 "SMALL_12V_BATTERY_CONN1" V 3891 2022 50  0000 R CNN
+F 1 "Conn_?" V 3800 2022 50  0001 R CNN
+F 2 "" H 4000 2350 60  0001 L CNN
+F 3 "" H 4000 2450 60  0001 L CNN
+F 4 "" H 4000 2550 60  0001 L CNN "DigiKeyPN"
+F 5 "" H 4000 2650 60  0001 L CNN "MPN"
+	1    3800 2150
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J1
 U 1 1 61E4C7B0
-P 3700 3350
-F 0 "J?" H 3780 3342 50  0000 L CNN
-F 1 "ECU_EN_CONNECTION" H 3780 3251 50  0000 L CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0470_1x04-1MP_P1.50mm_Vertical" H 3700 3350 50  0001 C CNN
-F 3 "~" H 3700 3350 50  0001 C CNN
-	1    3700 3350
+P 2450 3300
+F 0 "J1" H 2530 3292 50  0000 L CNN
+F 1 "ECU_EN_CONNECTION" H 2530 3201 50  0000 L CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0470_1x04-1MP_P1.50mm_Vertical" H 2450 3300 50  0001 C CNN
+F 3 "~" H 2450 3300 50  0001 C CNN
+	1    2450 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_Push #SW3
+U 1 1 61E621FC
+P 9400 2600
+F 0 "#SW3" H 9400 2885 50  0000 C CNN
+F 1 "ECU_KILL_TOGGLESWITCH_1" H 9400 2794 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Push_1P1T_NO_LED_E-Switch_TL1250" H 9400 2800 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/136/ST1.pdf" H 9400 2800 50  0001 C CNN
+F 4 "ST141D00" H 9400 2600 50  0001 C CNN "MPN"
+F 5 "EG4810-ND" H 9400 2600 50  0001 C CNN "DigiKeyPN"
+	1    9400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push #SW4
+U 1 1 61E66470
+P 9400 3000
+F 0 "#SW4" H 9400 3285 50  0000 C CNN
+F 1 "ECU_KILL_TOGGLESWITCH_2" H 9400 3194 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Push_1P1T_NO_LED_E-Switch_TL1250" H 9400 3200 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/136/ST1.pdf" H 9400 3200 50  0001 C CNN
+F 4 "ST141D00" H 9400 3000 50  0001 C CNN "MPN"
+F 5 "EG4810-ND" H 9400 3000 50  0001 C CNN "DigiKeyPN"
+	1    9400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push #SW5
+U 1 1 61E674A1
+P 9400 3400
+F 0 "#SW5" H 9400 3685 50  0000 C CNN
+F 1 "ECU_KILL_TOGGLESWITCH_3" H 9400 3594 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_Push_1P1T_NO_LED_E-Switch_TL1250" H 9400 3600 50  0001 C CNN
+F 3 "https://sten-eswitch-13110800-production.s3.amazonaws.com/system/asset/product_line/data_sheet/136/ST1.pdf" H 9400 3600 50  0001 C CNN
+F 4 "ST141D00" H 9400 3400 50  0001 C CNN "MPN"
+F 5 "EG4810-ND" H 9400 3400 50  0001 C CNN "DigiKeyPN"
+	1    9400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push #SW1
+U 1 1 61E464A3
+P 1500 4650
+F 0 "#SW1" H 1500 4935 50  0000 C CNN
+F 1 "#HORN_PUSHBUTTON" H 1500 4844 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH-12mm" H 1500 4850 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1341/d6.pdf" H 1500 4850 50  0001 C CNN
+F 4 "D6C90 F1 LFS" H 1500 4650 50  0001 C CNN "MPN"
+F 5 "401-1969-ND" H 1500 4650 50  0001 C CNN "DigiKeyPN"
+	1    1500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20MU U?
+U 1 1 61E7FAE2
+P 5100 9800
+F 0 "U?" H 4557 9846 50  0000 R CNN
+F 1 "ATtiny85-20MU" H 4557 9755 50  0000 R CNN
+F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5100 9800 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 5100 9800 50  0001 C CNN
+	1    5100 9800
+	1    0    0    -1  
+$EndComp
+Text Notes 7250 10100 0    50   ~ 0
+3 connection-Molex: PWR (12V), GND, SIG(O2)
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 61E82140
+P 8200 9600
+F 0 "J?" H 8280 9592 50  0000 L CNN
+F 1 "ECU_EN_CONNECTION" H 8280 9501 50  0000 L CNN
+F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0470_1x04-1MP_P1.50mm_Vertical" H 8200 9600 50  0001 C CNN
+F 3 "~" H 8200 9600 50  0001 C CNN
+	1    8200 9600
+	1    0    0    -1  
+$EndComp
+Text GLabel 8000 9500 0    50   Input ~ 0
+SMALL_12V
+$Comp
+L power:GND #PWR?
+U 1 1 61E84B3F
+P 8000 9800
+F 0 "#PWR?" H 8000 9550 50  0001 C CNN
+F 1 "GND" H 8005 9627 50  0000 C CNN
+F 2 "" H 8000 9800 50  0001 C CNN
+F 3 "" H 8000 9800 50  0001 C CNN
+	1    8000 9800
+	1    0    0    -1  
+$EndComp
+Text GLabel 8000 9600 0    50   Input ~ 0
+O2_ANALOG_READING_SIGNAL
+Text GLabel 5700 9600 2    50   Input ~ 0
+O2_ANALOG_READING_SIGNAL
+$Comp
+L power:GND #PWR?
+U 1 1 61E9BC19
+P 3700 2700
+F 0 "#PWR?" H 3700 2450 50  0001 C CNN
+F 1 "GND" H 3705 2527 50  0000 C CNN
+F 2 "" H 3700 2700 50  0001 C CNN
+F 3 "" H 3700 2700 50  0001 C CNN
+	1    3700 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 3700 2600 0    50   Input ~ 0
+SMALL_12V
+$Comp
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue IVY_UPDATE_EXTRA_POWER
+U 1 1 61E9BC22
+P 3800 2700
+F 0 "IVY_UPDATE_EXTRA_POWER" V 3891 2572 50  0000 R CNN
+F 1 "Conn_?" V 3800 2572 50  0001 R CNN
+F 2 "" H 4000 2900 60  0001 L CNN
+F 3 "" H 4000 3000 60  0001 L CNN
+F 4 "" H 4000 3100 60  0001 L CNN "DigiKeyPN"
+F 5 "" H 4000 3200 60  0001 L CNN "MPN"
+	1    3800 2700
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	800  4150 4050 4150
+Wire Notes Line
+	4050 4150 4050 7650
+Wire Notes Line
+	4050 7650 800  7650
+Wire Notes Line
+	800  7650 800  4150
 $EndSCHEMATC
