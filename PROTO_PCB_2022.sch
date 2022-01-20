@@ -608,13 +608,15 @@ $EndComp
 Text Notes 9100 6200 0    50   ~ 0
 3 connection-Molex: PWR (12V), GND, SIG(O2)
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x03 J?
 U 1 1 61E82140
 P 10050 5700
 F 0 "J?" H 10130 5692 50  0000 L CNN
 F 1 "ECU_EN_CONNECTION" H 10130 5601 50  0000 L CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_505405-0470_1x04-1MP_P1.50mm_Vertical" H 10050 5700 50  0001 C CNN
-F 3 "~" H 10050 5700 50  0001 C CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 10050 5700 50  0001 C CNN
+F 3 "https://www.molex.com/pdm_docs/sd/436500315_sd.pdf" H 10050 5700 50  0001 C CNN
+F 4 "WM1918-ND" H 10050 5700 50  0001 C CNN "DigikeyPN"
+F 5 "0436500315" H 10050 5700 50  0001 C CNN "MPN"
 	1    10050 5700
 	1    0    0    -1  
 $EndComp
@@ -623,12 +625,12 @@ SMALL_12V
 $Comp
 L power:GND #PWR?
 U 1 1 61E84B3F
-P 9850 5900
-F 0 "#PWR?" H 9850 5650 50  0001 C CNN
-F 1 "GND" H 9855 5727 50  0000 C CNN
-F 2 "" H 9850 5900 50  0001 C CNN
-F 3 "" H 9850 5900 50  0001 C CNN
-	1    9850 5900
+P 9850 5800
+F 0 "#PWR?" H 9850 5550 50  0001 C CNN
+F 1 "GND" H 9855 5627 50  0000 C CNN
+F 2 "" H 9850 5800 50  0001 C CNN
+F 3 "" H 9850 5800 50  0001 C CNN
+	1    9850 5800
 	1    0    0    -1  
 $EndComp
 Text GLabel 9850 5700 0    50   Input ~ 0
