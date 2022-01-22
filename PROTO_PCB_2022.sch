@@ -308,47 +308,47 @@ Starter Motor is normally not connected - only powered when push button is being
 $Comp
 L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue HORN_EN1
 U 1 1 61ECD161
-P 2400 1300
-F 0 "HORN_EN1" V 2491 1172 50  0000 R CNN
-F 1 "Conn_?" V 2400 1172 50  0001 R CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_502386-0270_1x02-1MP_P1.25mm_Horizontal" H 2600 1500 60  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/5023860270_sd.pdf" H 2600 1600 60  0001 L CNN
-F 4 "WM4946CT-ND" H 2600 1700 60  0001 L CNN "DigiKeyPN"
-F 5 "5023860270" H 2600 1800 60  0001 L CNN "MPN"
-	1    2400 1300
+P 2350 1200
+F 0 "HORN_EN1" V 2441 1072 50  0000 R CNN
+F 1 "Conn_?" V 2350 1072 50  0001 R CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0218_2x01-1MP_P3.00mm_Vertical" H 2550 1400 60  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/430450218_sd.pdf" H 2550 1500 60  0001 L CNN
+F 4 "WM1801CT-ND" H 2550 1600 60  0001 L CNN "DigiKeyPN"
+F 5 "0430450218" H 2550 1700 60  0001 L CNN "MPN"
+	1    2350 1200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR03
 U 1 1 61EE8800
-P 2300 1900
-F 0 "#PWR03" H 2300 1650 50  0001 C CNN
-F 1 "GND" H 2305 1727 50  0000 C CNN
-F 2 "" H 2300 1900 50  0001 C CNN
-F 3 "" H 2300 1900 50  0001 C CNN
-	1    2300 1900
+P 2250 2000
+F 0 "#PWR03" H 2250 1750 50  0001 C CNN
+F 1 "GND" H 2255 1827 50  0000 C CNN
+F 2 "" H 2250 2000 50  0001 C CNN
+F 3 "" H 2250 2000 50  0001 C CNN
+	1    2250 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 61EE8FFF
-P 2300 1600
-F 0 "#PWR02" H 2300 1350 50  0001 C CNN
-F 1 "GND" H 2305 1427 50  0000 C CNN
-F 2 "" H 2300 1600 50  0001 C CNN
-F 3 "" H 2300 1600 50  0001 C CNN
-	1    2300 1600
+P 2250 1600
+F 0 "#PWR02" H 2250 1350 50  0001 C CNN
+F 1 "GND" H 2255 1427 50  0000 C CNN
+F 2 "" H 2250 1600 50  0001 C CNN
+F 3 "" H 2250 1600 50  0001 C CNN
+	1    2250 1600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 61EE9788
-P 2300 1300
-F 0 "#PWR01" H 2300 1050 50  0001 C CNN
-F 1 "GND" H 2305 1127 50  0000 C CNN
-F 2 "" H 2300 1300 50  0001 C CNN
-F 3 "" H 2300 1300 50  0001 C CNN
-	1    2300 1300
+P 2250 1200
+F 0 "#PWR01" H 2250 950 50  0001 C CNN
+F 1 "GND" H 2255 1027 50  0000 C CNN
+F 2 "" H 2250 1200 50  0001 C CNN
+F 3 "" H 2250 1200 50  0001 C CNN
+	1    2250 1200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -362,20 +362,20 @@ F 3 "" H 2300 3050 50  0001 C CNN
 	1    2300 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2150 1800 0    50   Input ~ 0
+Text GLabel 2100 1900 0    50   Input ~ 0
 STARTER_EN_PUSHBUTTON
-Text GLabel 2150 1500 0    50   Input ~ 0
+Text GLabel 2100 1500 0    50   Input ~ 0
 BRAKELIGHTS_EN_12V_SIGNAL
-Text GLabel 2150 1200 0    50   Input ~ 0
+Text GLabel 2100 1100 0    50   Input ~ 0
 HORN_EN_12V_SIGNAL
 Wire Wire Line
 	2300 3050 2450 3050
 Wire Wire Line
-	2150 1200 2300 1200
+	2100 1100 2250 1100
 Wire Wire Line
-	2150 1500 2300 1500
+	2100 1500 2250 1500
 Wire Wire Line
-	2150 1800 2300 1800
+	2100 1900 2250 1900
 Text GLabel 4350 4600 0    50   Input ~ 0
 SMALL_12V
 $Comp
@@ -454,35 +454,35 @@ F 3 "" H 2900 6050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2900 6050 2900 6000
-Text GLabel 1550 2450 0    50   Input ~ 0
+Text GLabel 1800 2450 0    50   Input ~ 0
 SMALL_12V
 $Comp
 L power:GND #PWR010
 U 1 1 61EE2CFA
-P 4750 2400
-F 0 "#PWR010" H 4750 2150 50  0001 C CNN
-F 1 "GND" H 4755 2227 50  0000 C CNN
-F 2 "" H 4750 2400 50  0001 C CNN
-F 3 "" H 4750 2400 50  0001 C CNN
-	1    4750 2400
+P 4950 2950
+F 0 "#PWR010" H 4950 2700 50  0001 C CNN
+F 1 "GND" H 4955 2777 50  0000 C CNN
+F 2 "" H 4950 2950 50  0001 C CNN
+F 3 "" H 4950 2950 50  0001 C CNN
+	1    4950 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 2350 4750 2400
+	4900 2750 4900 2800
 Wire Wire Line
-	4600 2350 4750 2350
+	4800 2900 4950 2900
 $Comp
 L Device:Battery_Cell #BT1
 U 1 1 61EB6EF2
-P 4500 2350
-F 0 "#BT1" V 4755 2400 50  0000 C CNN
-F 1 "SMALL_12V_BATTERY" V 4664 2400 50  0000 C CNN
-F 2 "" V 4500 2410 50  0001 C CNN
-F 3 "~" V 4500 2410 50  0001 C CNN
-	1    4500 2350
+P 4700 2900
+F 0 "#BT1" V 4955 2950 50  0000 C CNN
+F 1 "SMALL_12V_BATTERY" V 4864 2950 50  0000 C CNN
+F 2 "" V 4700 2960 50  0001 C CNN
+F 3 "~" V 4700 2960 50  0001 C CNN
+	1    4700 2900
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4300 2350 0    50   Input ~ 0
+Text GLabel 4500 2900 0    50   Input ~ 0
 SMALL_12V
 Wire Wire Line
 	2250 4600 2400 4600
@@ -595,10 +595,10 @@ F 5 "401-1969-ND" H 7850 1400 50  0001 C CNN "DigiKeyPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_ATtiny:ATtiny85-20MU U?
+L MCU_Microchip_ATtiny:ATtiny85-20MU U1
 U 1 1 61E7FAE2
 P 7600 5350
-F 0 "U?" H 7057 5396 50  0000 R CNN
+F 0 "U1" H 7057 5396 50  0000 R CNN
 F 1 "ATtiny85-20MU" H 7057 5305 50  0000 R CNN
 F 2 "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 7600 5350 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 7600 5350 50  0001 C CNN
@@ -608,10 +608,10 @@ $EndComp
 Text Notes 9100 6200 0    50   ~ 0
 3 connection-Molex: PWR (12V), GND, SIG(O2)
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J4
 U 1 1 61E82140
 P 10050 5700
-F 0 "J?" H 10130 5692 50  0000 L CNN
+F 0 "J4" H 10130 5692 50  0000 L CNN
 F 1 "ECU_EN_CONNECTION" H 10130 5601 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0315_1x03_P3.00mm_Vertical" H 10050 5700 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/436500315_sd.pdf" H 10050 5700 50  0001 C CNN
@@ -623,10 +623,10 @@ $EndComp
 Text GLabel 9850 5600 0    50   Input ~ 0
 SMALL_12V
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 61E84B3F
 P 9850 5800
-F 0 "#PWR?" H 9850 5550 50  0001 C CNN
+F 0 "#PWR017" H 9850 5550 50  0001 C CNN
 F 1 "GND" H 9855 5627 50  0000 C CNN
 F 2 "" H 9850 5800 50  0001 C CNN
 F 3 "" H 9850 5800 50  0001 C CNN
@@ -637,32 +637,6 @@ Text GLabel 9850 5700 0    50   Input ~ 0
 O2_ANALOG_READING_SIGNAL
 Text GLabel 8200 5150 2    50   Input ~ 0
 O2_ANALOG_READING_SIGNAL
-$Comp
-L power:GND #PWR?
-U 1 1 61E9BC19
-P 4300 1750
-F 0 "#PWR?" H 4300 1500 50  0001 C CNN
-F 1 "GND" H 4305 1577 50  0000 C CNN
-F 2 "" H 4300 1750 50  0001 C CNN
-F 3 "" H 4300 1750 50  0001 C CNN
-	1    4300 1750
-	1    0    0    -1  
-$EndComp
-Text GLabel 4300 1650 0    50   Input ~ 0
-SMALL_12V
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue 12V_EXTRA
-U 1 1 61E9BC22
-P 4400 1750
-F 0 "12V_EXTRA" V 4491 1622 50  0000 R CNN
-F 1 "Conn_?" V 4400 1622 50  0001 R CNN
-F 2 "" H 4600 1950 60  0001 L CNN
-F 3 "" H 4600 2050 60  0001 L CNN
-F 4 "" H 4600 2150 60  0001 L CNN "DigiKeyPN"
-F 5 "" H 4600 2250 60  0001 L CNN "MPN"
-	1    4400 1750
-	0    -1   -1   0   
-$EndComp
 Wire Notes Line
 	7150 900  10400 900 
 Wire Notes Line
@@ -672,54 +646,40 @@ Wire Notes Line
 Wire Notes Line
 	7150 4400 7150 900 
 $Comp
-L Connector:Barrel_Jack_Switch J?
-U 1 1 61E7CEA3
-P 1850 2350
-F 0 "J?" H 1620 2300 50  0000 R CNN
-F 1 "SMALL_12V_BATTERY_CONNECTOR" H 1620 2391 50  0000 R CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-036AH-SMT_Horizontal" H 1900 2310 50  0001 C CNN
-F 3 "https://www.cuidevices.com/product/resource/pj-036ah-smt-tr.pdf" H 1900 2310 50  0001 C CNN
-F 4 "CP-036AHPJCT-ND" H 1850 2350 50  0001 C CNN "DigikeyPN"
-F 5 "PJ-036AH-SMT-TR" H 1850 2350 50  0001 C CNN "MPN"
-	1    1850 2350
+L power:GND #PWR08
+U 1 1 61EE358E
+P 1800 2350
+F 0 "#PWR08" H 1800 2100 50  0001 C CNN
+F 1 "GND" H 1805 2177 50  0000 C CNN
+F 2 "" H 1800 2350 50  0001 C CNN
+F 3 "" H 1800 2350 50  0001 C CNN
+	1    1800 2350
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR08
-U 1 1 61EE358E
-P 1550 2250
-F 0 "#PWR08" H 1550 2000 50  0001 C CNN
-F 1 "GND" H 1555 2077 50  0000 C CNN
-F 2 "" H 1550 2250 50  0001 C CNN
-F 3 "" H 1550 2250 50  0001 C CNN
-	1    1550 2250
-	0    1    1    0   
-$EndComp
-NoConn ~ 1550 2350
-$Comp
 L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue BRAKELIGHTS_EN1
 U 1 1 61E8C377
-P 2400 1600
-F 0 "BRAKELIGHTS_EN1" V 2491 1472 50  0000 R CNN
-F 1 "Conn_?" V 2400 1472 50  0001 R CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_502386-0270_1x02-1MP_P1.25mm_Horizontal" H 2600 1800 60  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/5023860270_sd.pdf" H 2600 1900 60  0001 L CNN
-F 4 "WM4946CT-ND" H 2600 2000 60  0001 L CNN "DigiKeyPN"
-F 5 "5023860270" H 2600 2100 60  0001 L CNN "MPN"
-	1    2400 1600
+P 2350 1600
+F 0 "BRAKELIGHTS_EN1" V 2441 1472 50  0000 R CNN
+F 1 "Conn_?" V 2350 1472 50  0001 R CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0218_2x01-1MP_P3.00mm_Vertical" H 2550 1800 60  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/430450218_sd.pdf" H 2550 1900 60  0001 L CNN
+F 4 "WM1801CT-ND" H 2550 2000 60  0001 L CNN "DigiKeyPN"
+F 5 "0430450218" H 2550 2100 60  0001 L CNN "MPN"
+	1    2350 1600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue STARTER_MOTOR_EN1
 U 1 1 61E8EEF4
-P 2400 1900
-F 0 "STARTER_MOTOR_EN1" V 2491 1772 50  0000 R CNN
-F 1 "Conn_?" V 2400 1772 50  0001 R CNN
-F 2 "Connector_Molex:Molex_CLIK-Mate_502386-0270_1x02-1MP_P1.25mm_Horizontal" H 2600 2100 60  0001 L CNN
-F 3 "https://www.molex.com/pdm_docs/sd/5023860270_sd.pdf" H 2600 2200 60  0001 L CNN
-F 4 "WM4946CT-ND" H 2600 2300 60  0001 L CNN "DigiKeyPN"
-F 5 "5023860270" H 2600 2400 60  0001 L CNN "MPN"
-	1    2400 1900
+P 2350 2000
+F 0 "STARTER_MOTOR_EN1" V 2441 1872 50  0000 R CNN
+F 1 "Conn_?" V 2350 1872 50  0001 R CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43045-0218_2x01-1MP_P3.00mm_Vertical" H 2550 2200 60  0001 L CNN
+F 3 "https://www.molex.com/pdm_docs/sd/430450218_sd.pdf" H 2550 2300 60  0001 L CNN
+F 4 "WM1801CT-ND" H 2550 2400 60  0001 L CNN "DigiKeyPN"
+F 5 "0430450218" H 2550 2500 60  0001 L CNN "MPN"
+	1    2350 2000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -734,10 +694,10 @@ F 3 "~" H 9700 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R2
 U 1 1 61E941D5
 P 8600 3750
-F 0 "R?" H 8670 3796 50  0000 L CNN
+F 0 "R2" H 8670 3796 50  0000 L CNN
 F 1 "10k" H 8670 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 8530 3750 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8600 3750 50  0001 C CNN
@@ -752,4 +712,57 @@ Wire Notes Line
 	5450 1000 5450 3300
 Text Notes 1350 5750 0    50   ~ 0
 SHOULD WE SEPARATE SIGNAL_12V FROM POWER_12V?
+$Comp
+L power:GND #PWR016
+U 1 1 61E9BC19
+P 4400 1800
+F 0 "#PWR016" H 4400 1550 50  0001 C CNN
+F 1 "GND" H 4405 1627 50  0000 C CNN
+F 2 "" H 4400 1800 50  0001 C CNN
+F 3 "" H 4400 1800 50  0001 C CNN
+	1    4400 1800
+	1    0    0    -1  
+$EndComp
+Text GLabel 4400 1700 0    50   Input ~ 0
+SMALL_12V
+$Comp
+L dk_Terminal-Blocks-Wire-to-Board:1935161 J2
+U 1 1 61EB8369
+P 2000 2450
+F 0 "J2" V 2091 2372 50  0000 R CNN
+F 1 "SMALL_12V_BATTERY_CONNECTOR" V 2000 2372 50  0000 R CNN
+F 2 "digikey-footprints:Terminal_Block_D1.3mm_P5mm" H 2200 2650 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 2200 2750 60  0001 L CNN
+F 4 "277-1667-ND" H 2200 2850 60  0001 L CNN "Digi-Key_PN"
+F 5 "1935161" H 2200 2950 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 2200 3050 60  0001 L CNN "Category"
+F 7 "Terminal Blocks - Wire to Board" H 2200 3150 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 2200 3250 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 2200 3350 60  0001 L CNN "DK_Detail_Page"
+F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 2200 3450 60  0001 L CNN "Description"
+F 11 "Phoenix Contact" H 2200 3550 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2200 3650 60  0001 L CNN "Status"
+	1    2000 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Terminal-Blocks-Wire-to-Board:1935161 J3
+U 1 1 61ED7766
+P 4600 1800
+F 0 "J3" V 4691 1722 50  0000 R CNN
+F 1 "12V_EXTRA" V 4600 1722 50  0000 R CNN
+F 2 "digikey-footprints:Terminal_Block_D1.3mm_P5mm" H 4800 2000 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 4800 2100 60  0001 L CNN
+F 4 "277-1667-ND" H 4800 2200 60  0001 L CNN "Digi-Key_PN"
+F 5 "1935161" H 4800 2300 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 4800 2400 60  0001 L CNN "Category"
+F 7 "Terminal Blocks - Wire to Board" H 4800 2500 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 4800 2600 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 4800 2700 60  0001 L CNN "DK_Detail_Page"
+F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 4800 2800 60  0001 L CNN "Description"
+F 11 "Phoenix Contact" H 4800 2900 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4800 3000 60  0001 L CNN "Status"
+	1    4600 1800
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
