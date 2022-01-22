@@ -1,6 +1,35 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 1935161-dk_Terminal-Blocks-Wire-to-Board
+#
+DEF 1935161-dk_Terminal-Blocks-Wire-to-Board J 0 40 Y Y 1 F N
+F0 "J" -50 200 50 H V R CNN
+F1 "1935161-dk_Terminal-Blocks-Wire-to-Board" 50 -100 50 H V C CNN
+F2 "digikey-footprints:Terminal_Block_D1.3mm_P5mm" 200 200 60 H I L CNN
+F3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" 200 300 60 H I L CNN
+F4 "277-1667-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "1935161" 200 500 60 H I L CNN "MPN"
+F6 "Connectors, Interconnects" 200 600 60 H I L CNN "Category"
+F7 "Terminal Blocks - Wire to Board" 200 700 60 H I L CNN "Family"
+F8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" 200 1000 60 H I L CNN "Description"
+F11 "Phoenix Contact" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+C 0 0 25 0 1 0 N
+C 100 0 25 0 1 0 N
+S -50 100 150 -50 0 1 0 f
+P 2 0 1 0 0 25 0 -25 N
+P 2 0 1 0 25 0 -25 0 N
+P 2 0 1 0 75 0 125 0 N
+P 2 0 1 0 100 25 100 -25 N
+X ~ 1 0 200 100 D 50 50 1 1 P
+X ~ 2 100 200 100 D 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue
 #
 DEF B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J 0 40 Y Y 1 F N
