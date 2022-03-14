@@ -27,26 +27,9 @@ F 5 "RK7002BMT116CT-ND" H 8800 2850 50  0001 C CNN "DigiKeyPN"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 3050 8900 3150
-Wire Wire Line
 	8400 2850 8400 2950
 Wire Wire Line
 	8400 3250 8400 3350
-$Comp
-L Device:Q_NMOS_DGS Q2
-U 1 1 618C50B5
-P 8800 4550
-F 0 "Q2" H 9005 4596 50  0000 L CNN
-F 1 "BRAKELIGHTS_MOSFET1" H 9005 4505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9000 4650 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 8800 4550 50  0001 C CNN
-F 4 "RK7002BMT116" H 8800 4550 50  0001 C CNN "MPN"
-F 5 "RK7002BMT116CT-ND" H 8800 4550 50  0001 C CNN "DigiKeyPN"
-	1    8800 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 4550 8400 4550
 Wire Wire Line
 	8400 4950 8400 5100
 Wire Wire Line
@@ -140,8 +123,6 @@ F 3 "" H 9700 3450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9700 3350 9650 3350
-Wire Wire Line
-	8900 4750 8900 4850
 $Comp
 L Device:R #R4
 U 1 1 61E794DB
@@ -496,19 +477,6 @@ F 3 "~" H 9500 3350 50  0001 C CNN
 	1    9500 3350
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R2
-U 1 1 61E941D5
-P 8400 4800
-F 0 "R2" H 8470 4846 50  0000 L CNN
-F 1 "10k" H 8470 4755 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8330 4800 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8400 4800 50  0001 C CNN
-F 4 "RC0805FR-0710RL" H 8400 4800 50  0001 C CNN "MPN"
-F 5 "311-10.0CRCT-ND" H 8400 4800 50  0001 C CNN "DigikeyPN"
-	1    8400 4800
-	1    0    0    -1  
-$EndComp
 Text Notes 1350 5750 0    50   ~ 0
 SHOULD WE SEPARATE SIGNAL_12V FROM POWER_12V?
 $Comp
@@ -711,10 +679,10 @@ Wire Wire Line
 Wire Wire Line
 	2150 3250 2300 3250
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male #J6
 U 1 1 61F7B731
 P 7300 1650
-F 0 "J?" H 7408 1831 50  0000 C CNN
+F 0 "#J6" H 7408 1831 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 7408 1740 50  0000 C CNN
 F 2 "" H 7300 1650 50  0001 C CNN
 F 3 "~" H 7300 1650 50  0001 C CNN
@@ -722,10 +690,10 @@ F 3 "~" H 7300 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J1
 U 1 1 61F7F680
 P 2500 2650
-F 0 "J?" H 2580 2642 50  0000 L CNN
+F 0 "J1" H 2580 2642 50  0000 L CNN
 F 1 "ECU_EN_CONNECTON_1" H 2580 2551 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical" H 2500 2650 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/436500215_sd.pdf" H 2500 2650 50  0001 C CNN
@@ -735,10 +703,10 @@ F 5 "WM1917-ND" H 2500 2650 50  0001 C CNN "DigiKeyPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J4
 U 1 1 61F820EC
 P 2500 2950
-F 0 "J?" H 2580 2942 50  0000 L CNN
+F 0 "J4" H 2580 2942 50  0000 L CNN
 F 1 "ECU_EN_CONECTION_2" H 2580 2851 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical" H 2500 2950 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/436500215_sd.pdf" H 2500 2950 50  0001 C CNN
@@ -748,10 +716,10 @@ F 5 "WM1917-ND" H 2500 2950 50  0001 C CNN "DigikeyPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J5
 U 1 1 61F82F62
 P 2500 3250
-F 0 "J?" H 2580 3242 50  0000 L CNN
+F 0 "J5" H 2580 3242 50  0000 L CNN
 F 1 "ECU_EN_CONECTION_3" H 2580 3151 50  0000 L CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0215_1x02_P3.00mm_Vertical" H 2500 3250 50  0001 C CNN
 F 3 "https://www.molex.com/pdm_docs/sd/436500215_sd.pdf" H 2500 3250 50  0001 C CNN
@@ -788,4 +756,68 @@ Wire Wire Line
 	2400 5000 2250 5000
 Wire Wire Line
 	2250 5150 3150 5150
+$Comp
+L Device:Q_NMOS_DGS Q2
+U 1 1 618C50B5
+P 8800 4550
+F 0 "Q2" H 9005 4596 50  0000 L CNN
+F 1 "BRAKELIGHTS_MOSFET1" H 9005 4505 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9000 4650 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 8800 4550 50  0001 C CNN
+F 4 "RK7002BMT116" H 8800 4550 50  0001 C CNN "MPN"
+F 5 "RK7002BMT116CT-ND" H 8800 4550 50  0001 C CNN "DigiKeyPN"
+	1    8800 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4550 8400 4550
+$Comp
+L Device:R R2
+U 1 1 61E941D5
+P 8400 4800
+F 0 "R2" H 8470 4846 50  0000 L CNN
+F 1 "10k" H 8470 4755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8330 4800 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8400 4800 50  0001 C CNN
+F 4 "RC0805FR-0710RL" H 8400 4800 50  0001 C CNN "MPN"
+F 5 "311-10.0CRCT-ND" H 8400 4800 50  0001 C CNN "DigikeyPN"
+	1    8400 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_TVS D2
+U 1 1 622E5E5E
+P 8600 4750
+F 0 "D2" V 8554 4830 50  0000 L CNN
+F 1 "BRAKELIGHTS_D_TVS" V 8645 4830 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 8600 4750 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/Transient%20Suppression%20Diodes.pdf~" H 8600 4750 50  0001 C CNN
+	1    8600 4750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 4600 8600 4550
+Connection ~ 8600 4550
+Wire Wire Line
+	8600 4900 8900 4900
+Wire Wire Line
+	8900 4750 8900 4900
+$Comp
+L Device:D_TVS D1
+U 1 1 62314A6C
+P 8600 3050
+F 0 "D1" V 8646 2970 50  0000 R CNN
+F 1 "HORN_D_TVS" V 8555 2970 50  0000 R CNN
+F 2 "Diode_SMD:D_SMB" H 8600 3050 50  0001 C CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/Transient%20Suppression%20Diodes.pdf" H 8600 3050 50  0001 C CNN
+	1    8600 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 2900 8600 2850
+Connection ~ 8600 2850
+Wire Wire Line
+	8600 3200 8900 3200
+Wire Wire Line
+	8900 3050 8900 3200
 $EndSCHEMATC
