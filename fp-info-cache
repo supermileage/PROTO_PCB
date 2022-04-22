@@ -1,4 +1,4 @@
-19216191992930923
+19085026129916923
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50877,6 +50877,13 @@ emi filter
 5
 Footprint Library
 Molex_Proto_Microfit_Footprint
+
+
+0
+2
+2
+Footprint Library
+Molex_Proto_Microfit_Footprint_Pretty
 
 
 0

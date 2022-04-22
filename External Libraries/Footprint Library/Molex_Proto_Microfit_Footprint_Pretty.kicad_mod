@@ -1,4 +1,4 @@
-(module Molex_Proto_Microfit_Footprint (layer F.Cu) (tedit 6260AA55)
+(module Molex_Proto_Microfit_Footprint_Pretty (layer F.Cu) (tedit 6260AA55)
   (fp_text reference REF** (at -2.54 -8.89) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
