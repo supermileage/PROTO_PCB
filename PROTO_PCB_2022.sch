@@ -625,8 +625,6 @@ Wire Notes Line
 Wire Notes Line
 	6500 2500 8200 2500
 Wire Notes Line
-	8200 2500 8200 3150
-Wire Notes Line
 	8200 3150 6500 3150
 Wire Notes Line
 	6500 3150 6500 2500
@@ -673,8 +671,6 @@ F 3 "~" H 3000 6800 50  0001 C CNN
 	1    3000 6800
 	1    0    0    -1  
 $EndComp
-Text Notes 3350 7100 0    50   ~ 0
-DOES VESC HAVE ITS OWN PULL DOWN RESISTOR?\ndoes this resistor make sense?\nthe intention was to dissipate anything remaining
 Connection ~ 3000 6650
 $Comp
 L power:GND #PWR?
@@ -696,9 +692,9 @@ P 2500 2950
 F 0 "Q1" H 2704 2996 50  0000 L CNN
 F 1 "HORN_MOSFET1" H 2704 2905 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 2700 3050 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 2500 2950 50  0001 C CNN
-F 4 "RK7002BMT116" H 2500 2950 50  0001 C CNN "MPN"
-F 5 "RK7002BMT116CT-ND" H 2500 2950 50  0001 C CNN "DigiKeyPN"
+F 3 "https://www.digikey.ca/en/products/detail/diodes-incorporated/ZXMN3F30FHTA/1827752" H 2500 2950 50  0001 C CNN
+F 4 "ZXMN3F30FHTA" H 2500 2950 50  0001 C CNN "MPN"
+F 5 "ZXMN3F30FHCT-ND" H 2500 2950 50  0001 C CNN "DigiKeyPN"
 	1    2500 2950
 	1    0    0    -1  
 $EndComp
@@ -720,28 +716,30 @@ $EndComp
 Wire Wire Line
 	2600 2750 2600 2650
 Text Notes 6500 3850 0    98   ~ 0
-To-do:\n-find a new and change mosfet\n-5V and 12V pads\n
+To-do:\n-5V and 12V pads\n
 Text Notes 9500 1750 0    98   ~ 0
 add diode
 Wire Notes Line
 	6500 900  10600 900 
 Wire Notes Line
 	6500 1850 10600 1850
-$Comp
-L Device:Q_NMOS_DGS Q2
-U 1 1 618C50B5
-P 5000 2950
-F 0 "Q2" H 5205 2996 50  0000 L CNN
-F 1 "BRAKELIGHTS_MOSFET1" H 5205 2905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 3050 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 5000 2950 50  0001 C CNN
-F 4 "RK7002BMT116" H 5000 2950 50  0001 C CNN "MPN"
-F 5 "RK7002BMT116CT-ND" H 5000 2950 50  0001 C CNN "DigiKeyPN"
-	1    5000 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 3150 2600 3400
 Text Notes 6500 4450 0    98   ~ 0
--add LED lights to show when buttons are being pressed\n-spec new horizontal molex connectors\n\nmisc: current sense probe for oscilloscope?
+-add LED lights to show when buttons are being pressed\n-caps for regulator\n -spec new horizontal molex connectors\nmisc: current sense probe for oscilloscope?
+$Comp
+L Device:Q_NMOS_DGS Q2
+U 1 1 62652563
+P 5000 2950
+F 0 "Q2" H 5204 2996 50  0000 L CNN
+F 1 "BRAKELIGHTS_MOSFET1" H 5204 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 3050 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/diodes-incorporated/ZXMN3F30FHTA/1827752" H 5000 2950 50  0001 C CNN
+F 4 "ZXMN3F30FHTA" H 5000 2950 50  0001 C CNN "MPN"
+F 5 "ZXMN3F30FHCT-ND" H 5000 2950 50  0001 C CNN "DigiKeyPN"
+	1    5000 2950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	8200 2500 8200 3150
 $EndSCHEMATC
