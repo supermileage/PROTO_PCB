@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -34,8 +34,9 @@
   )
 
   (setup
-    (last_trace_width 1.57)
+    (last_trace_width 2.5)
     (user_trace_width 1.57)
+    (user_trace_width 2.5)
     (user_trace_width 3.14)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -683,7 +684,7 @@
     (fp_text reference J2 (at -5.715 -2.33 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value BRAKELIGHTS_EN1 (at -4.445 -2.965) (layer F.SilkS)
+    (fp_text value BRAKELIGHTS_EN1 (at -4.445 -2.33) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -4.844991 -7.57) (end -4.844991 3.74) (layer F.CrtYd) (width 0.05))

@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
     (34 B.Paste user)
@@ -34,8 +34,9 @@
   )
 
   (setup
-    (last_trace_width 1.57)
+    (last_trace_width 2.5)
     (user_trace_width 1.57)
+    (user_trace_width 2.5)
     (user_trace_width 3.14)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -570,7 +571,7 @@
   (module "Footprint Library:Molex_Proto_Microfit_Footprint" (layer F.Cu) (tedit 6260AA55) (tstamp 6260B8D7)
     (at 123.825 84.455 90)
     (path /6263B4A4)
-    (fp_text reference J9 (at -6.477 -2.413 180) (layer F.SilkS)
+    (fp_text reference J9 (at -6.477 -1.905 180) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value ECU_KILL_1 (at -5.08 -1.905 180) (layer F.SilkS)
