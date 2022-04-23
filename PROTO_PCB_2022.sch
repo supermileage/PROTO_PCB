@@ -166,34 +166,6 @@ F 5 "311-10.0CRCT-ND" H 4600 3200 50  0001 C CNN "DigikeyPN"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_TVS D2
-U 1 1 622E5E5E
-P 4800 3150
-F 0 "D2" V 4754 3230 50  0000 L CNN
-F 1 "BRAKELIGHTS_D_TVS" V 4845 3230 50  0000 L CNN
-F 2 "Diode_SMD:D_SMB" H 4800 3150 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/Transient%20Suppression%20Diodes.pdf~" H 4800 3150 50  0001 C CNN
-	1    4800 3150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4800 3000 4800 2950
-Wire Wire Line
-	4800 3300 5100 3300
-$Comp
-L Device:D_TVS D1
-U 1 1 62314A6C
-P 2300 3150
-F 0 "D1" V 2346 3070 50  0000 R CNN
-F 1 "HORN_D_TVS" V 2255 3070 50  0000 R CNN
-F 2 "Diode_SMD:D_SMB" H 2300 3150 50  0001 C CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/AVX%20PDFs/Transient%20Suppression%20Diodes.pdf" H 2300 3150 50  0001 C CNN
-	1    2300 3150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2300 3000 2300 2950
-$Comp
 L power:GND #PWR020
 U 1 1 61E794E6
 P 5100 3300
@@ -206,21 +178,6 @@ F 3 "" H 5100 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5100 3150 5100 3300
-Connection ~ 5100 3300
-Connection ~ 4800 2950
-$Comp
-L Device:Q_NMOS_DGS Q2
-U 1 1 618C50B5
-P 5000 2950
-F 0 "Q2" H 5205 2996 50  0000 L CNN
-F 1 "BRAKELIGHTS_MOSFET1" H 5205 2905 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 3050 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 5000 2950 50  0001 C CNN
-F 4 "RK7002BMT116" H 5000 2950 50  0001 C CNN "MPN"
-F 5 "RK7002BMT116CT-ND" H 5000 2950 50  0001 C CNN "DigiKeyPN"
-	1    5000 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5100 2650 5100 2750
 Wire Wire Line
@@ -673,10 +630,6 @@ Wire Notes Line
 	8200 3150 6500 3150
 Wire Notes Line
 	6500 3150 6500 2500
-Wire Notes Line
-	6500 900  10150 900 
-Wire Notes Line
-	6500 1850 10150 1850
 Text GLabel 2200 1400 0    50   Input ~ 0
 HORN_EN_5V
 $Comp
@@ -736,9 +689,6 @@ F 3 "" H 3750 6550 50  0001 C CNN
 $EndComp
 Text GLabel 4700 5550 0    50   Input ~ 0
 ECU_POWER
-Text Notes 6400 4400 0    98   ~ 0
-add pads for 5v and 12v\nadd LED lights to show when buttons are being pressed\nchange to horizontal molex connectors\ncurrent sense probe for oscilloscope?
-Connection ~ 2300 2950
 $Comp
 L Device:Q_NMOS_DGS Q1
 U 1 1 618BB460
@@ -756,11 +706,6 @@ Wire Wire Line
 	1950 2650 2600 2650
 Text GLabel 2600 2650 2    50   Input ~ 0
 HORN_GND
-Connection ~ 2600 3300
-Wire Wire Line
-	2600 3150 2600 3300
-Wire Wire Line
-	2300 3300 2600 3300
 $Comp
 L power:GND #PWR010
 U 1 1 61E751B9
@@ -773,11 +718,30 @@ F 3 "" H 2600 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 3300 2600 3400
-Wire Wire Line
 	2600 2750 2600 2650
-Text Notes 6400 3650 0    98   ~ 0
-remove tvs\nchange mosfet
+Text Notes 6500 3850 0    98   ~ 0
+To-do:\n-find a new and change mosfet\n-5V and 12V pads\n
 Text Notes 9500 1750 0    98   ~ 0
 add diode
+Wire Notes Line
+	6500 900  10600 900 
+Wire Notes Line
+	6500 1850 10600 1850
+$Comp
+L Device:Q_NMOS_DGS Q2
+U 1 1 618C50B5
+P 5000 2950
+F 0 "Q2" H 5205 2996 50  0000 L CNN
+F 1 "BRAKELIGHTS_MOSFET1" H 5205 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5200 3050 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/rohm-semiconductor/RK7002BMT116/4924083" H 5000 2950 50  0001 C CNN
+F 4 "RK7002BMT116" H 5000 2950 50  0001 C CNN "MPN"
+F 5 "RK7002BMT116CT-ND" H 5000 2950 50  0001 C CNN "DigiKeyPN"
+	1    5000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3150 2600 3400
+Text Notes 6500 4450 0    98   ~ 0
+-add LED lights to show when buttons are being pressed\n-spec new horizontal molex connectors\n\nmisc: current sense probe for oscilloscope?
 $EndSCHEMATC
