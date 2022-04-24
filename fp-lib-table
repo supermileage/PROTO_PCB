@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "Footprint Library")(type KiCad)(uri "${KIPRJMOD}/External Libraries/Footprint Library")(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri "${KIPRJMOD}/External Libraries/ul_436500201/KiCAD/2022-04-24_03-02-30/footprints.pretty")(options "")(descr ""))
 )
