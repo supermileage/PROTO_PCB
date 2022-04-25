@@ -40,51 +40,10 @@ Wire Wire Line
 	3200 5750 3200 5500
 Text GLabel 3050 5750 0    50   Input ~ 0
 ECU_POWER
-Text GLabel 2950 6550 0    50   Input ~ 0
-VESC_EN_5V
-Wire Wire Line
-	3000 6350 3150 6350
-Text GLabel 5150 5000 0    50   Input ~ 0
-ECU_KILL_EN_TOGGLESWITCH_2B
-Text GLabel 5150 5200 0    50   Input ~ 0
-ECU_KILL_EN_TOGGLESWITCH_3A
-Text GLabel 5150 4600 0    50   Input ~ 0
-ECU_KILL_EN_TOGGLESWITCH_1A
-Wire Wire Line
-	5150 4600 5300 4600
-Wire Wire Line
-	5150 5000 5300 5000
-Wire Wire Line
-	5150 5300 5300 5300
 Text Notes 950  4050 0    98   ~ 0
 STARTER, ECU\n
 Text Notes 800  850  0    98   ~ 0
 HORN, BRAKELIGHTS
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J3
-U 1 1 61E8EEF4
-P 3250 6450
-F 0 "J3" V 3341 6322 50  0000 R CNN
-F 1 "STARTER_MOTOR_EN" V 3250 6322 50  0001 R CNN
-F 2 "footprints:436500201" H 3450 6650 60  0001 L CNN
-F 3 "https://www.digikey.ca/en/products/detail/molex/0430450227/3310182" H 3450 6750 60  0001 L CNN
-F 4 "" H 3450 6850 60  0001 L CNN "DigiKeyPN"
-F 5 "0436500201" H 3450 6950 60  0001 L CNN "MPN"
-	1    3250 6450
-	0    -1   -1   0   
-$EndComp
-Text GLabel 5150 5300 0    50   Input ~ 0
-ECU_KILL_EN_TOGGLESWITCH_3B
-Text GLabel 5150 4900 0    50   Input ~ 0
-ECU_KILL_EN_TOGGLESWITCH_2A
-Text GLabel 5150 4700 0    50   Input ~ 0
-ECU_KILL_EN_TOGGLESWITCH_1B
-Wire Wire Line
-	5150 4700 5300 4700
-Wire Wire Line
-	5150 4900 5300 4900
-Wire Wire Line
-	5150 5200 5300 5200
 Text GLabel 2300 5150 0    50   Input ~ 0
 ECU_KILL_EN_TOGGLESWITCH_2B
 Text GLabel 2300 5350 0    50   Input ~ 0
@@ -174,17 +133,6 @@ F 12 "Active" H 5100 6850 60  0001 L CNN "Status"
 $EndComp
 Text GLabel 5100 2650 2    50   Input ~ 0
 BRAKELIGHTS_GND
-$Comp
-L power:+5V #PWR05
-U 1 1 6262968B
-P 3000 6350
-F 0 "#PWR05" H 3000 6200 50  0001 C CNN
-F 1 "+5V" H 3015 6523 50  0000 C CNN
-F 2 "" H 3000 6350 50  0001 C CNN
-F 3 "" H 3000 6350 50  0001 C CNN
-	1    3000 6350
-	1    0    0    -1  
-$EndComp
 Text GLabel 4200 2950 0    50   Input ~ 0
 BRAKELIGHTS_EN_5V
 $Comp
@@ -198,41 +146,6 @@ F 3 "~" H 1800 2650 50  0001 C CNN
 	1    1800 2650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3600 6450 3750 6450
-$Comp
-L power:GND #PWR06
-U 1 1 6269B091
-P 3000 6950
-F 0 "#PWR06" H 3000 6700 50  0001 C CNN
-F 1 "GND" H 3005 6777 50  0000 C CNN
-F 2 "" H 3000 6950 50  0001 C CNN
-F 3 "" H 3000 6950 50  0001 C CNN
-	1    3000 6950
-	1    0    0    -1  
-$EndComp
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J4
-U 1 1 6269B08B
-P 3850 6550
-F 0 "J4" V 3941 6422 50  0000 R CNN
-F 1 "VESC_EN_SIGNAL" V 3850 6422 50  0001 R CNN
-F 2 "footprints:436500201" H 4050 6750 60  0001 L CNN
-F 3 "https://www.digikey.ca/en/products/detail/molex/0430450227/3310182" H 4050 6850 60  0001 L CNN
-F 4 "" H 4050 6950 60  0001 L CNN "DigiKeyPN"
-F 5 "0436500201" H 4050 7050 60  0001 L CNN "MPN"
-	1    3850 6550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3000 6650 3000 6550
-Wire Wire Line
-	3000 6450 3150 6450
-Wire Wire Line
-	3000 6550 2950 6550
-Connection ~ 3000 6550
-Wire Wire Line
-	3000 6550 3000 6450
 Wire Notes Line
 	800  900  800  3800
 Wire Notes Line
@@ -485,33 +398,6 @@ F 4 "" H 2500 1800 60  0001 L CNN "DigiKeyPN"
 F 5 "0436500201" H 2500 1900 60  0001 L CNN "MPN"
 	1    2300 1400
 	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3000 6650 3600 6650
-Wire Wire Line
-	3600 6650 3600 6450
-$Comp
-L Device:R R3
-U 1 1 627BCD01
-P 3000 6800
-F 0 "R3" H 3070 6846 50  0000 L CNN
-F 1 "10k" H 3070 6755 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 2930 6800 50  0001 C CNN
-F 3 "~" H 3000 6800 50  0001 C CNN
-	1    3000 6800
-	1    0    0    -1  
-$EndComp
-Connection ~ 3000 6650
-$Comp
-L power:GND #PWR07
-U 1 1 627F638F
-P 3750 6550
-F 0 "#PWR07" H 3750 6300 50  0001 C CNN
-F 1 "GND" H 3755 6377 50  0000 C CNN
-F 2 "" H 3750 6550 50  0001 C CNN
-F 3 "" H 3750 6550 50  0001 C CNN
-	1    3750 6550
-	1    0    0    -1  
 $EndComp
 Text GLabel 4700 5550 0    50   Input ~ 0
 ECU_POWER
@@ -849,66 +735,6 @@ Connection ~ 7750 1300
 Wire Wire Line
 	7750 1300 7600 1300
 $Comp
-L PROTO_PCB_2022-rescue:1935161-dk_Terminal-Blocks-Wire-to-Board J8
-U 1 1 626B7A02
-P 5500 4700
-F 0 "J8" V 5591 4622 50  0000 R CNN
-F 1 "ECU_1" V 5500 4622 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 5700 4900 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5000 60  0001 L CNN
-F 4 "277-1667-ND" H 5700 5100 60  0001 L CNN "Digi-Key_PN"
-F 5 "1935161" H 5700 5200 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 5700 5300 60  0001 L CNN "Category"
-F 7 "Terminal Blocks - Wire to Board" H 5700 5400 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5500 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 5700 5600 60  0001 L CNN "DK_Detail_Page"
-F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 5700 5700 60  0001 L CNN "Description"
-F 11 "Phoenix Contact" H 5700 5800 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5700 5900 60  0001 L CNN "Status"
-	1    5500 4700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L PROTO_PCB_2022-rescue:1935161-dk_Terminal-Blocks-Wire-to-Board J9
-U 1 1 626BB15C
-P 5500 5000
-F 0 "J9" V 5591 4922 50  0000 R CNN
-F 1 "ECU_2" V 5500 4922 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 5700 5200 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5300 60  0001 L CNN
-F 4 "277-1667-ND" H 5700 5400 60  0001 L CNN "Digi-Key_PN"
-F 5 "1935161" H 5700 5500 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 5700 5600 60  0001 L CNN "Category"
-F 7 "Terminal Blocks - Wire to Board" H 5700 5700 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5800 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 5700 5900 60  0001 L CNN "DK_Detail_Page"
-F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 5700 6000 60  0001 L CNN "Description"
-F 11 "Phoenix Contact" H 5700 6100 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5700 6200 60  0001 L CNN "Status"
-	1    5500 5000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L PROTO_PCB_2022-rescue:1935161-dk_Terminal-Blocks-Wire-to-Board J10
-U 1 1 626BEB22
-P 5500 5300
-F 0 "J10" V 5591 5222 50  0000 R CNN
-F 1 "ECU_3" V 5500 5222 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 5700 5500 60  0001 L CNN
-F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5600 60  0001 L CNN
-F 4 "277-1667-ND" H 5700 5700 60  0001 L CNN "Digi-Key_PN"
-F 5 "1935161" H 5700 5800 60  0001 L CNN "MPN"
-F 6 "Connectors, Interconnects" H 5700 5900 60  0001 L CNN "Category"
-F 7 "Terminal Blocks - Wire to Board" H 5700 6000 60  0001 L CNN "Family"
-F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 6100 60  0001 L CNN "DK_Datasheet_Link"
-F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 5700 6200 60  0001 L CNN "DK_Detail_Page"
-F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 5700 6300 60  0001 L CNN "Description"
-F 11 "Phoenix Contact" H 5700 6400 60  0001 L CNN "Manufacturer"
-F 12 "Active" H 5700 6500 60  0001 L CNN "Status"
-	1    5500 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:Fuse F1
 U 1 1 62772F28
 P 8750 1400
@@ -946,4 +772,178 @@ F 3 "~" H 8950 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8950 1150
+$Comp
+L PROTO_PCB_2022-rescue:1935161-dk_Terminal-Blocks-Wire-to-Board J10
+U 1 1 626BEB22
+P 5500 5300
+F 0 "J10" V 5591 5222 50  0000 R CNN
+F 1 "ECU_3" V 5500 5222 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 5700 5500 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5600 60  0001 L CNN
+F 4 "277-1667-ND" H 5700 5700 60  0001 L CNN "Digi-Key_PN"
+F 5 "1935161" H 5700 5800 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5700 5900 60  0001 L CNN "Category"
+F 7 "Terminal Blocks - Wire to Board" H 5700 6000 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 6100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 5700 6200 60  0001 L CNN "DK_Detail_Page"
+F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 5700 6300 60  0001 L CNN "Description"
+F 11 "Phoenix Contact" H 5700 6400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5700 6500 60  0001 L CNN "Status"
+	1    5500 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PROTO_PCB_2022-rescue:1935161-dk_Terminal-Blocks-Wire-to-Board J9
+U 1 1 626BB15C
+P 5500 5000
+F 0 "J9" V 5591 4922 50  0000 R CNN
+F 1 "ECU_2" V 5500 4922 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 5700 5200 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5300 60  0001 L CNN
+F 4 "277-1667-ND" H 5700 5400 60  0001 L CNN "Digi-Key_PN"
+F 5 "1935161" H 5700 5500 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5700 5600 60  0001 L CNN "Category"
+F 7 "Terminal Blocks - Wire to Board" H 5700 5700 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5800 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 5700 5900 60  0001 L CNN "DK_Detail_Page"
+F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 5700 6000 60  0001 L CNN "Description"
+F 11 "Phoenix Contact" H 5700 6100 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5700 6200 60  0001 L CNN "Status"
+	1    5500 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L PROTO_PCB_2022-rescue:1935161-dk_Terminal-Blocks-Wire-to-Board J8
+U 1 1 626B7A02
+P 5500 4700
+F 0 "J8" V 5591 4622 50  0000 R CNN
+F 1 "ECU_1" V 5500 4622 50  0000 R CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 5700 4900 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5000 60  0001 L CNN
+F 4 "277-1667-ND" H 5700 5100 60  0001 L CNN "Digi-Key_PN"
+F 5 "1935161" H 5700 5200 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 5700 5300 60  0001 L CNN "Category"
+F 7 "Terminal Blocks - Wire to Board" H 5700 5400 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 5700 5500 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614" H 5700 5600 60  0001 L CNN "DK_Detail_Page"
+F 10 "TERM BLK 2POS SIDE ENTRY 5MM PCB" H 5700 5700 60  0001 L CNN "Description"
+F 11 "Phoenix Contact" H 5700 5800 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5700 5900 60  0001 L CNN "Status"
+	1    5500 4700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 5200 5300 5200
+Wire Wire Line
+	5150 4900 5300 4900
+Wire Wire Line
+	5150 4700 5300 4700
+Text GLabel 5150 4700 0    50   Input ~ 0
+ECU_KILL_EN_TOGGLESWITCH_1B
+Text GLabel 5150 4900 0    50   Input ~ 0
+ECU_KILL_EN_TOGGLESWITCH_2A
+Text GLabel 5150 5300 0    50   Input ~ 0
+ECU_KILL_EN_TOGGLESWITCH_3B
+Wire Wire Line
+	5150 5300 5300 5300
+Wire Wire Line
+	5150 5000 5300 5000
+Wire Wire Line
+	5150 4600 5300 4600
+Text GLabel 5150 4600 0    50   Input ~ 0
+ECU_KILL_EN_TOGGLESWITCH_1A
+Text GLabel 5150 5200 0    50   Input ~ 0
+ECU_KILL_EN_TOGGLESWITCH_3A
+Text GLabel 5150 5000 0    50   Input ~ 0
+ECU_KILL_EN_TOGGLESWITCH_2B
+$Comp
+L power:GND #PWR07
+U 1 1 627F638F
+P 3750 6550
+F 0 "#PWR07" H 3750 6300 50  0001 C CNN
+F 1 "GND" H 3755 6377 50  0000 C CNN
+F 2 "" H 3750 6550 50  0001 C CNN
+F 3 "" H 3750 6550 50  0001 C CNN
+	1    3750 6550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3000 6650
+$Comp
+L Device:R R3
+U 1 1 627BCD01
+P 3000 6800
+F 0 "R3" H 3070 6846 50  0000 L CNN
+F 1 "10k" H 3070 6755 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 2930 6800 50  0001 C CNN
+F 3 "~" H 3000 6800 50  0001 C CNN
+	1    3000 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6650 3600 6450
+Wire Wire Line
+	3000 6650 3600 6650
+Wire Wire Line
+	3000 6550 3000 6450
+Connection ~ 3000 6550
+Wire Wire Line
+	3000 6550 2950 6550
+Wire Wire Line
+	3000 6450 3150 6450
+Wire Wire Line
+	3000 6650 3000 6550
+$Comp
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J4
+U 1 1 6269B08B
+P 3850 6550
+F 0 "J4" V 3941 6422 50  0000 R CNN
+F 1 "VESC_EN_SIGNAL" V 3850 6422 50  0001 R CNN
+F 2 "footprints:436500201" H 4050 6750 60  0001 L CNN
+F 3 "https://www.digikey.ca/en/products/detail/molex/0430450227/3310182" H 4050 6850 60  0001 L CNN
+F 4 "" H 4050 6950 60  0001 L CNN "DigiKeyPN"
+F 5 "0436500201" H 4050 7050 60  0001 L CNN "MPN"
+	1    3850 6550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 6269B091
+P 3000 6950
+F 0 "#PWR06" H 3000 6700 50  0001 C CNN
+F 1 "GND" H 3005 6777 50  0000 C CNN
+F 2 "" H 3000 6950 50  0001 C CNN
+F 3 "" H 3000 6950 50  0001 C CNN
+	1    3000 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6450 3750 6450
+$Comp
+L power:+5V #PWR05
+U 1 1 6262968B
+P 3000 6350
+F 0 "#PWR05" H 3000 6200 50  0001 C CNN
+F 1 "+5V" H 3015 6523 50  0000 C CNN
+F 2 "" H 3000 6350 50  0001 C CNN
+F 3 "" H 3000 6350 50  0001 C CNN
+	1    3000 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J3
+U 1 1 61E8EEF4
+P 3250 6450
+F 0 "J3" V 3341 6322 50  0000 R CNN
+F 1 "STARTER_MOTOR_EN" V 3250 6322 50  0001 R CNN
+F 2 "footprints:436500201" H 3450 6650 60  0001 L CNN
+F 3 "https://www.digikey.ca/en/products/detail/molex/0430450227/3310182" H 3450 6750 60  0001 L CNN
+F 4 "" H 3450 6850 60  0001 L CNN "DigiKeyPN"
+F 5 "0436500201" H 3450 6950 60  0001 L CNN "MPN"
+	1    3250 6450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3000 6350 3150 6350
+Text GLabel 2950 6550 0    50   Input ~ 0
+VESC_EN_5V
 $EndSCHEMATC
