@@ -117,7 +117,7 @@ U 1 1 61EB8369
 P 1200 1150
 F 0 "J1" V 1291 1072 50  0000 R CNN
 F 1 "12V_BATT" V 1200 1072 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 1400 1350 60  0001 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1400 1350 60  0001 L CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 1400 1450 60  0001 L CNN
 F 4 "277-1667-ND" H 1400 1550 60  0001 L CNN "Digi-Key_PN"
 F 5 "1935161" H 1400 1650 60  0001 L CNN "MPN"
