@@ -117,7 +117,7 @@ U 1 1 61EB8369
 P 1200 1150
 F 0 "J1" V 1291 1072 50  0000 R CNN
 F 1 "12V_BATT" V 1200 1072 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 1400 1350 60  0001 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal" H 1400 1350 60  0001 L CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Phoenix%20Contact%20PDFs/1935161.pdf" H 1400 1450 60  0001 L CNN
 F 4 "277-1667-ND" H 1400 1550 60  0001 L CNN "Digi-Key_PN"
 F 5 "1935161" H 1400 1650 60  0001 L CNN "MPN"
@@ -337,7 +337,7 @@ L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Mal
 U 1 1 62844300
 P 6200 1500
 F 0 "J9" V 6291 1372 50  0000 R CNN
-F 1 "12V_OUT_TEL" V 6200 1372 50  0000 R CNN
+F 1 "12V_OUT_AUX" V 6200 1372 50  0000 R CNN
 F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 6400 1700 60  0001 L CNN
 F 3 "" H 6400 1800 60  0001 L CNN
 F 4 "" H 6400 1900 60  0001 L CNN "DigiKeyPN"
@@ -356,23 +356,8 @@ F 3 "" H 5500 1150 50  0001 C CNN
 	1    5500 1150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Fuse F5
-U 1 1 62844314
-P 5800 1400
-F 0 "F5" V 5603 1400 50  0000 C CNN
-F 1 "1A" V 5694 1400 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 5730 1400 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/littelfuse-inc/178-6164-0001/2515818" H 5800 1400 50  0001 C CNN
-	1    5800 1400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	5500 1150 5500 1400
-Wire Wire Line
-	5500 1400 5650 1400
-Wire Wire Line
-	5950 1400 6100 1400
 $Comp
 L power:GND #PWR012
 U 1 1 62844321
@@ -388,62 +373,6 @@ Wire Wire Line
 	6100 1500 5500 1500
 Wire Wire Line
 	5500 1500 5500 1700
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J10
-U 1 1 6284D1CD
-P 7700 1500
-F 0 "J10" V 7791 1372 50  0000 R CNN
-F 1 "12V_OUT_AUX" V 7700 1372 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 7900 1700 60  0001 L CNN
-F 3 "" H 7900 1800 60  0001 L CNN
-F 4 "" H 7900 1900 60  0001 L CNN "DigiKeyPN"
-F 5 "0436500201" H 7900 2000 60  0001 L CNN "MPN"
-	1    7700 1500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+12V #PWR015
-U 1 1 6284D1D7
-P 7000 1150
-F 0 "#PWR015" H 7000 1000 50  0001 C CNN
-F 1 "+12V" H 7015 1323 50  0000 C CNN
-F 2 "" H 7000 1150 50  0001 C CNN
-F 3 "" H 7000 1150 50  0001 C CNN
-	1    7000 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Fuse F6
-U 1 1 6284D1E1
-P 7300 1400
-F 0 "F6" V 7103 1400 50  0000 C CNN
-F 1 "1A" V 7194 1400 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 7230 1400 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/littelfuse-inc/178-6164-0001/2515818" H 7300 1400 50  0001 C CNN
-	1    7300 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7000 1150 7000 1400
-Wire Wire Line
-	7000 1400 7150 1400
-Wire Wire Line
-	7450 1400 7600 1400
-$Comp
-L power:GND #PWR016
-U 1 1 6284D1EE
-P 7000 1700
-F 0 "#PWR016" H 7000 1450 50  0001 C CNN
-F 1 "GND" H 7005 1527 50  0000 C CNN
-F 2 "" H 7000 1700 50  0001 C CNN
-F 3 "" H 7000 1700 50  0001 C CNN
-	1    7000 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7600 1500 7000 1500
-Wire Wire Line
-	7000 1500 7000 1700
 $Comp
 L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J2
 U 1 1 6286EDC8
@@ -636,66 +565,10 @@ Wire Wire Line
 	2650 3850 2650 4300
 Wire Wire Line
 	2650 3500 2650 3750
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J13
-U 1 1 628AE5D5
-P 9250 1500
-F 0 "J13" V 9341 1372 50  0000 R CNN
-F 1 "5V_OUT_AUX" V 9250 1372 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 9450 1700 60  0001 L CNN
-F 3 "" H 9450 1800 60  0001 L CNN
-F 4 "" H 9450 1900 60  0001 L CNN "DigiKeyPN"
-F 5 "0436500201" H 9450 2000 60  0001 L CNN "MPN"
-	1    9250 1500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:Fuse F7
-U 1 1 628AE5E9
-P 8850 1400
-F 0 "F7" V 8653 1400 50  0000 C CNN
-F 1 "1A" V 8744 1400 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 8780 1400 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/littelfuse-inc/178-6164-0001/2515818" H 8850 1400 50  0001 C CNN
-	1    8850 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8550 1150 8550 1400
-Wire Wire Line
-	8550 1400 8700 1400
-Wire Wire Line
-	9000 1400 9150 1400
-$Comp
-L power:GND #PWR020
-U 1 1 628AE5F6
-P 8550 1700
-F 0 "#PWR020" H 8550 1450 50  0001 C CNN
-F 1 "GND" H 8555 1527 50  0000 C CNN
-F 2 "" H 8550 1700 50  0001 C CNN
-F 3 "" H 8550 1700 50  0001 C CNN
-	1    8550 1700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 1500 8550 1500
-Wire Wire Line
-	8550 1500 8550 1700
 Wire Wire Line
 	3250 1500 3250 1650
 Wire Wire Line
 	2600 1950 2600 2050
-$Comp
-L power:+5V #PWR019
-U 1 1 628BB6ED
-P 8550 1150
-F 0 "#PWR019" H 8550 1000 50  0001 C CNN
-F 1 "+5V" H 8565 1323 50  0000 C CNN
-F 2 "" H 8550 1150 50  0001 C CNN
-F 3 "" H 8550 1150 50  0001 C CNN
-	1    8550 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 3650 5650 3750
 Wire Wire Line
@@ -896,4 +769,19 @@ Wire Wire Line
 Connection ~ 1100 1650
 Wire Wire Line
 	1100 1650 1100 1900
+$Comp
+L Device:Fuse F?
+U 1 1 627DA095
+P 5800 1400
+F 0 "F?" V 5603 1400 50  0000 C CNN
+F 1 "1A" V 5694 1400 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 5730 1400 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/littelfuse-inc/178-6164-0001/2515818" H 5800 1400 50  0001 C CNN
+	1    5800 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 1400 5650 1400
+Wire Wire Line
+	5950 1400 6100 1400
 $EndSCHEMATC
