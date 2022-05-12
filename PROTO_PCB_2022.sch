@@ -83,7 +83,6 @@ F 3 "~" H 2150 1800 50  0001 C CNN
 	1    2150 1800
 	1    0    0    -1  
 $EndComp
-Connection ~ 2150 1650
 Wire Wire Line
 	2150 1950 2600 1950
 Connection ~ 2600 1950
@@ -103,12 +102,12 @@ $EndComp
 $Comp
 L power:+12V #PWR02
 U 1 1 626F3385
-P 1800 1500
-F 0 "#PWR02" H 1800 1350 50  0001 C CNN
-F 1 "+12V" H 1815 1673 50  0000 C CNN
-F 2 "" H 1800 1500 50  0001 C CNN
-F 3 "" H 1800 1500 50  0001 C CNN
-	1    1800 1500
+P 1600 1500
+F 0 "#PWR02" H 1600 1350 50  0001 C CNN
+F 1 "+12V" H 1615 1673 50  0000 C CNN
+F 2 "" H 1600 1500 50  0001 C CNN
+F 3 "" H 1600 1500 50  0001 C CNN
+	1    1600 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -218,25 +217,14 @@ Connection ~ 3050 1650
 Wire Wire Line
 	3050 1650 2900 1650
 $Comp
-L Device:Fuse F1
-U 1 1 62772F28
-P 1450 1650
-F 0 "F1" V 1253 1650 50  0000 C CNN
-F 1 "10A" V 1344 1650 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 1380 1650 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/littelfuse-inc/178-6164-0001/2515818" H 1450 1650 50  0001 C CNN
-	1    1450 1650
-	0    1    1    0   
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG01
 U 1 1 6266F354
-P 1800 1750
-F 0 "#FLG01" H 1800 1825 50  0001 C CNN
-F 1 "PWR_FLAG" H 1800 1923 50  0000 C CNN
-F 2 "" H 1800 1750 50  0001 C CNN
-F 3 "~" H 1800 1750 50  0001 C CNN
-	1    1800 1750
+P 1600 1750
+F 0 "#FLG01" H 1600 1825 50  0001 C CNN
+F 1 "PWR_FLAG" H 1600 1923 50  0000 C CNN
+F 2 "" H 1600 1750 50  0001 C CNN
+F 3 "~" H 1600 1750 50  0001 C CNN
+	1    1600 1750
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -264,16 +252,10 @@ $EndComp
 Wire Wire Line
 	1200 1350 1200 1650
 Wire Wire Line
-	1200 1650 1300 1650
+	1600 1650 1600 1500
 Wire Wire Line
-	1800 1650 1800 1500
-Wire Wire Line
-	1800 1650 1800 1750
-Connection ~ 1800 1650
-Wire Wire Line
-	1600 1650 1800 1650
-Wire Wire Line
-	1800 1650 2150 1650
+	1600 1650 1600 1750
+Connection ~ 1600 1650
 Wire Wire Line
 	1100 1350 1100 1650
 $Comp
@@ -726,33 +708,16 @@ $EndComp
 $Comp
 L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J11
 U 1 1 628EA1D1
-P 7700 3250
-F 0 "J11" V 7791 3122 50  0000 R CNN
-F 1 "SW_START" V 7700 3122 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 7900 3450 60  0001 L CNN
-F 3 "" H 7900 3550 60  0001 L CNN
-F 4 "" H 7900 3650 60  0001 L CNN "DigiKeyPN"
-F 5 "0436500201" H 7900 3750 60  0001 L CNN "MPN"
-	1    7700 3250
+P 7650 3500
+F 0 "J11" V 7741 3372 50  0000 R CNN
+F 1 "SW_START" V 7650 3372 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 7850 3700 60  0001 L CNN
+F 3 "" H 7850 3800 60  0001 L CNN
+F 4 "" H 7850 3900 60  0001 L CNN "DigiKeyPN"
+F 5 "0436500201" H 7850 4000 60  0001 L CNN "MPN"
+	1    7650 3500
 	0    1    1    0   
 $EndComp
-$Comp
-L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J12
-U 1 1 628EA177
-P 8250 3350
-F 0 "J12" V 8341 3222 50  0000 R CNN
-F 1 "VESC_START" V 8250 3222 50  0000 R CNN
-F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 8450 3550 60  0001 L CNN
-F 3 "" H 8450 3650 60  0001 L CNN
-F 4 "" H 8450 3750 60  0001 L CNN "DigiKeyPN"
-F 5 "0436500201" H 8450 3850 60  0001 L CNN "MPN"
-	1    8250 3350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7800 3250 8150 3250
-Wire Wire Line
-	8150 3350 7800 3350
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 62911761
@@ -784,4 +749,56 @@ Wire Wire Line
 	5500 1400 5650 1400
 Wire Wire Line
 	5950 1400 6100 1400
+$Comp
+L Device:R R5
+U 1 1 627D75F0
+P 8400 3700
+F 0 "R5" H 8470 3746 50  0000 L CNN
+F 1 "1k" H 8470 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 8330 3700 50  0001 C CNN
+F 3 "~" H 8400 3700 50  0001 C CNN
+	1    8400 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 627D75FA
+P 8000 3700
+F 0 "D3" V 8039 3582 50  0000 R CNN
+F 1 "LED" V 7948 3582 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric" H 8000 3700 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/lite-on-inc/LTST-C190KGKT/386815" H 8000 3700 50  0001 C CNN
+	1    8000 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L PROTO_PCB_2022-rescue:B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue J12
+U 1 1 628EA177
+P 8750 3600
+F 0 "J12" V 8841 3472 50  0000 R CNN
+F 1 "VESC_START" V 8750 3472 50  0000 R CNN
+F 2 "Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal" H 8950 3800 60  0001 L CNN
+F 3 "" H 8950 3900 60  0001 L CNN
+F 4 "" H 8950 4000 60  0001 L CNN "DigiKeyPN"
+F 5 "0436500201" H 8950 4100 60  0001 L CNN "MPN"
+	1    8750 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 3500 8650 3500
+Wire Wire Line
+	7750 3600 7750 3700
+Wire Wire Line
+	7750 3700 7850 3700
+Wire Wire Line
+	8150 3700 8250 3700
+Wire Wire Line
+	8550 3700 8650 3700
+Wire Wire Line
+	8650 3700 8650 3600
+Wire Wire Line
+	1200 1650 1600 1650
+Wire Wire Line
+	1600 1650 2150 1650
+Connection ~ 2150 1650
 $EndSCHEMATC
