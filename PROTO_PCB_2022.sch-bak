@@ -301,9 +301,9 @@ P 2850 5300
 F 0 "Q1" H 3054 5346 50  0000 L CNN
 F 1 "MOSFET_ECU" H 3054 5255 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 3050 5400 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/diodes-incorporated/ZXMN3F30FHTA/1827752" H 2850 5300 50  0001 C CNN
-F 4 "ZXMN3F30FHTA" H 2850 5300 50  0001 C CNN "MPN"
-F 5 "ZXMN3F30FHCT-ND" H 2850 5300 50  0001 C CNN "DigiKeyPN"
+F 3 "https://www.digikey.ca/en/products/detail/infineon-technologies/IRFR120ZTRPBF/1928290" H 2850 5300 50  0001 C CNN
+F 4 "" H 2850 5300 50  0001 C CNN "MPN"
+F 5 "" H 2850 5300 50  0001 C CNN "DigiKeyPN"
 	1    2850 5300
 	1    0    0    -1  
 $EndComp
@@ -470,9 +470,9 @@ P 6350 5050
 F 0 "Q2" H 6554 5096 50  0000 L CNN
 F 1 "MOSFET_BRAKE_LIGHT" H 6554 5005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 6550 5150 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/diodes-incorporated/ZXMN3F30FHTA/1827752" H 6350 5050 50  0001 C CNN
-F 4 "ZXMN3F30FHTA" H 6350 5050 50  0001 C CNN "MPN"
-F 5 "ZXMN3F30FHCT-ND" H 6350 5050 50  0001 C CNN "DigiKeyPN"
+F 3 "https://www.digikey.ca/en/products/detail/infineon-technologies/IRFR120ZTRPBF/1928290" H 6350 5050 50  0001 C CNN
+F 4 "" H 6350 5050 50  0001 C CNN "MPN"
+F 5 "" H 6350 5050 50  0001 C CNN "DigiKeyPN"
 	1    6350 5050
 	1    0    0    -1  
 $EndComp
