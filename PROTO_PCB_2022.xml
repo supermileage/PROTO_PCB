@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/silviu/git/PROTO_PCB_2022/PROTO_PCB_2022.sch</source>
+    <date>Friday, May 13, 2022 at 12:21:14 pm</date>
+    <tool>Eeschema (5.1.9-0-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>PROTO_PCB_2022.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="H1">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627461D5</tstamp>
+    </comp>
+    <comp ref="H2">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62747631</tstamp>
+    </comp>
+    <comp ref="H3">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627E145B</tstamp>
+    </comp>
+    <comp ref="H4">
+      <value>MountingHole</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627E1EEC</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>12V_HORN</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62830442</tstamp>
+    </comp>
+    <comp ref="F2">
+      <value>2A</value>
+      <footprint>Fuse:Fuseholder_Blade_Mini_Keystone_3568</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/keystone-electronics/3568/2137306</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6283627F</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>12V_TEL</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62844300</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>SW_KILL_DRIVER</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6286EDC8</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>SW_KILL_LEFT</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628706A0</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>SW_KILL_RIGHT</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628713BF</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT10K0/1759669?s=N4IgjCBcoExaBjKAzAhgGwM4FMA0IB7KAbXADYBWAFgGYQBdfABwBcoQBlFgJwEsA7AOYgAvvjrQQSSGix5CJcGBoRGIVuy58ho-GDLwpKDDnxFIpABw0A7GFXM2kTjwHCxIGAAZLFQ9NlTBQtwLwACAGsAeQALAFtMBkd2AFV%2BXhYo5ABZbFRMAFdubF0QAFoISQCTeXNSGxpLBg8yuCqoHgLaxT96FoBOfw7uLrNFVRFJoA</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62877507</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>MOSFET_ECU</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-3_TabPin2</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/infineon-technologies/IRFR120ZTRPBF/1928290</datasheet>
+      <libsource lib="Device" part="Q_NMOS_DGS" description="N-MOSFET transistor, drain/gate/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62877522</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>GREEN</value>
+      <footprint>LED_SMD:LED_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/lite-on-inc/LTST-C230KGKT/386855</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62877533</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT1K00/1759616</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6287753D</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>12V_ECU</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6288EB92</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>5A</value>
+      <footprint>Fuse:Fuseholder_Blade_Mini_Keystone_3568</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/keystone-electronics/3568/2137306</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62898B0A</tstamp>
+    </comp>
+    <comp ref="F4">
+      <value>2A</value>
+      <footprint>Fuse:Fuseholder_Blade_Mini_Keystone_3568</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/keystone-electronics/3568/2137306</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628BCDF2</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>12V_BRAKE_LIGHT</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628BCDDC</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT1K00/1759616</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628BCDCA</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>GREEN</value>
+      <footprint>LED_SMD:LED_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/lite-on-inc/LTST-C230KGKT/386855</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628BCDC0</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>MOSFET_BRAKE_LIGHT</value>
+      <footprint>Package_TO_SOT_SMD:TO-252-3_TabPin2</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/infineon-technologies/IRFR120ZTRPBF/1928290</datasheet>
+      <libsource lib="Device" part="Q_NMOS_DGS" description="N-MOSFET transistor, drain/gate/source"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628BCDB0</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT10K0/1759669?s=N4IgjCBcoExaBjKAzAhgGwM4FMA0IB7KAbXADYBWAFgGYQBdfABwBcoQBlFgJwEsA7AOYgAvvjrQQSSGix5CJcGBoRGIVuy58ho-GDLwpKDDnxFIpABw0A7GFXM2kTjwHCxIGAAZLFQ9NlTBQtwLwACAGsAeQALAFtMBkd2AFV%2BXhYo5ABZbFRMAFdubF0QAFoISQCTeXNSGxpLBg8yuCqoHgLaxT96FoBOfw7uLrNFVRFJoA</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628BCD9A</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>SW_BRAKE</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628BCD63</tstamp>
+    </comp>
+    <comp ref="F3">
+      <value>1A</value>
+      <footprint>Fuse:Fuseholder_Blade_Mini_Keystone_3568</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/keystone-electronics/3568/2137306</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627DA095</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>12V_IN</value>
+      <footprint>Footprint Library:MOLEX_2002411212</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/2002411212/10709048?s=N4IgTCBcDa4AxzAFgIwrOkBdAvkA</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627F50CC</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>12V_AUX</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62810D2F</tstamp>
+    </comp>
+    <comp ref="F5">
+      <value>1A</value>
+      <footprint>Fuse:Fuseholder_Blade_Mini_Keystone_3568</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/keystone-electronics/3568/2137306</datasheet>
+      <libsource lib="Device" part="Fuse" description="Fuse"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62810D50</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>VESC_START</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628EA177</tstamp>
+    </comp>
+    <comp ref="L4">
+      <value>GREEN</value>
+      <footprint>LED_SMD:LED_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/lite-on-inc/LTST-C230KGKT/386855</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627D75FA</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT1K00/1759616</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>627D75F0</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>SW_START</value>
+      <footprint>Connector_Molex:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/molex/0436500200/268989</datasheet>
+      <libsource lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628EA1D1</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>12V Test</value>
+      <footprint>TestPoint:TestPoint_Keystone_5015_Micro-Minature</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62693D3B</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>GND Test</value>
+      <footprint>TestPoint:TestPoint_Keystone_5015_Micro-Minature</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62690AA9</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>RED</value>
+      <footprint>LED_SMD:LED_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/lite-on-inc/LTST-C230KRKT/386857</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628C2B81</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric</footprint>
+      <datasheet>https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT1K00/1759616</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>628C2B87</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="TestPoint">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Fuse">
+      <description>Fuse</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>*Fuse*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Fuse</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="Q_NMOS_DGS">
+      <description>N-MOSFET transistor, drain/gate/source</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_NMOS_DGS</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="passive"/>
+        <pin num="2" name="G" type="input"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+      </fields>
+    </libpart>
+    <libpart lib="PROTO_PCB_2022-rescue" part="B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">B2B-PH-K-S_LF__SN_-dk_Rectangular-Connectors-Headers-Male-Pins-Proto-PCB's-combined-rescue-Proto-PCB's-combined-rescue</field>
+        <field name="Footprint">digikey-footprints:PinHeader_1x2_P2mm_Drill1mm</field>
+        <field name="Datasheet">http://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="Digi-Key_PN">455-1704-ND</field>
+        <field name="MPN">B2B-PH-K-S(LF)(SN)</field>
+        <field name="Category">Connectors, Interconnects</field>
+        <field name="Family">Rectangular Connectors - Headers, Male Pins</field>
+        <field name="DK_Datasheet_Link">http://www.jst-mfg.com/product/pdf/eng/ePH.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/jst-sales-america-inc/B2B-PH-K-S(LF)(SN)/455-1704-ND/926611</field>
+        <field name="Description">CONN HEADER VERT 2POS 2MM</field>
+        <field name="Manufacturer">JST Sales America Inc.</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/Library/Application Support/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>/Library/Application Support/kicad/library/Mechanical.lib</uri>
+    </library>
+    <library logical="PROTO_PCB_2022-rescue">
+      <uri>/Users/silviu/git/PROTO_PCB_2022/PROTO_PCB_2022-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+12V">
+      <node ref="F3" pin="2"/>
+      <node ref="F2" pin="2"/>
+      <node ref="J7" pin="1"/>
+      <node ref="L2" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="F4" pin="2"/>
+      <node ref="F5" pin="2"/>
+      <node ref="F1" pin="2"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="2" name="Net-(F2-Pad1)">
+      <node ref="F2" pin="1"/>
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="3" name="Net-(J2-Pad2)">
+      <node ref="J3" pin="1"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="4" name="Net-(J3-Pad2)">
+      <node ref="J4" pin="1"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="5" name="Net-(J4-Pad2)">
+      <node ref="L1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R3" pin="1"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="6" name="Net-(L1-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="7" name="Net-(J5-Pad1)">
+      <node ref="J5" pin="1"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(F1-Pad1)">
+      <node ref="J5" pin="2"/>
+      <node ref="F1" pin="1"/>
+    </net>
+    <net code="9" name="Net-(J9-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="10" name="Net-(F4-Pad1)">
+      <node ref="J9" pin="2"/>
+      <node ref="F4" pin="1"/>
+    </net>
+    <net code="11" name="Net-(L3-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="L3" pin="1"/>
+    </net>
+    <net code="12" name="Net-(J7-Pad2)">
+      <node ref="L3" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="13" name="Net-(F3-Pad1)">
+      <node ref="F3" pin="1"/>
+      <node ref="J8" pin="2"/>
+    </net>
+    <net code="14" name="Net-(F5-Pad1)">
+      <node ref="F5" pin="1"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="15" name="Net-(J12-Pad1)">
+      <node ref="J12" pin="1"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="16" name="Net-(L4-Pad1)">
+      <node ref="L4" pin="1"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="17" name="Net-(J11-Pad2)">
+      <node ref="L4" pin="2"/>
+      <node ref="J11" pin="2"/>
+    </net>
+    <net code="18" name="Net-(J11-Pad1)">
+      <node ref="J11" pin="1"/>
+      <node ref="J12" pin="2"/>
+    </net>
+    <net code="19" name="GND">
+      <node ref="J1" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="R4" pin="2"/>
+      <node ref="J10" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="TP2" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="J8" pin="1"/>
+      <node ref="R1" pin="1"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="20" name="Net-(L2-Pad1)">
+      <node ref="R1" pin="2"/>
+      <node ref="L2" pin="1"/>
+    </net>
+  </nets>
+</export>
