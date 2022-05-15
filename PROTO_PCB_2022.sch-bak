@@ -673,9 +673,9 @@ L Device:R R6
 U 1 1 627D75F0
 P 9500 4450
 F 0 "R6" H 9570 4496 50  0000 L CNN
-F 1 "1k" H 9570 4405 50  0000 L CNN
+F 1 "100" H 9570 4405 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 9430 4450 50  0001 C CNN
-F 3 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT1K00/1759616" H 9500 4450 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF1206FT100R/1759677" H 9500 4450 50  0001 C CNN
 	1    9500 4450
 	0    -1   -1   0   
 $EndComp
