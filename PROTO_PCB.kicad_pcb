@@ -1692,7 +1692,7 @@
   (gr_text "-   +" (at 66.548 123.825 -90) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000062810446)
     (effects (font (size 2 2) (thickness 0.2)))
   )
-  (gr_text "-  +" (at 110.871 111.125) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000062817d47)
+  (gr_text "T  3V3" (at 111.310901 111.349354) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000062817d47)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "Roy Du\nJesslyn Ariya\nMichelle Li\nTalisha Griesbach\nSarah Qadar\nIvy McKay\nSilviu Toderita\n" (at 50.038 144.78) (layer "F.SilkS") (tstamp 00000000-0000-0000-0000-000062817d4f)
